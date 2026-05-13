@@ -10,7 +10,7 @@ export default function Experience() {
 
       <main className="relative z-10 max-w-container-max mx-auto px-4 md:px-8 pt-28 pb-section flex-grow">
         {/* Hero Section Asymmetric Layout */}
-        <header className="flex flex-col md:flex-row justify-between items-end gap-element mb-section border-b border-primary-container/20 pb-element">
+        <header className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-section border-b border-primary-container/20 pb-6">
           <div className="max-w-2xl">
             <p className="font-label-mono text-label-mono text-primary uppercase mb-unit">03 // TRAJECTORY</p>
             <h1 className="font-display text-display text-silver-mist">Experience</h1>
@@ -34,7 +34,7 @@ export default function Experience() {
 
             <div className="flex flex-col gap-element">
               {/* Frosted Card: Experience 1 */}
-              <div className="relative bg-surface/40 backdrop-blur-[8px] border border-primary-container/20 p-8 rounded-xl md:ml-12 group hover:bg-surface-container-high/50 hover:border-primary-container/40 transition-all duration-500">
+              <div className="relative bg-surface/40 backdrop-blur-[8px] border border-primary-container/20 p-6 md:p-8 rounded-xl md:ml-12 group hover:bg-surface-container-high/50 hover:border-primary-container/40 transition-all duration-500">
                 {/* Timeline Node */}
                 <div className="absolute -left-[41px] top-8 w-4 h-4 rounded-full bg-background border-2 border-primary hidden md:block group-hover:bg-primary transition-colors duration-300"></div>
                 <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-6">
@@ -75,7 +75,7 @@ export default function Experience() {
           {/* Right Column: Sidebar (Education & Certifications) (Span 4) */}
           <div className="lg:col-span-4 flex flex-col gap-element">
             {/* Education Bento Box */}
-            <div className="bg-surface/30 backdrop-blur-[8px] border border-primary-container/20 p-8 rounded-xl relative overflow-hidden">
+            <div className="bg-surface/30 backdrop-blur-[8px] border border-primary-container/20 p-6 md:p-8 rounded-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-[50px] rounded-full pointer-events-none"></div>
               <p className="font-label-mono text-label-mono text-primary uppercase mb-6 flex items-center gap-2">
                 <span className="material-symbols-outlined text-[18px]">school</span>
@@ -90,7 +90,7 @@ export default function Experience() {
             </div>
 
             {/* Certifications Bento Box */}
-            <div className="bg-surface/30 backdrop-blur-[8px] border border-primary-container/20 p-8 rounded-xl relative overflow-hidden">
+            <div className="bg-surface/30 backdrop-blur-[8px] border border-primary-container/20 p-6 md:p-8 rounded-xl relative overflow-hidden">
               <div className="absolute bottom-0 right-0 w-32 h-32 bg-secondary-container/10 blur-[50px] rounded-full pointer-events-none"></div>
               <p className="font-label-mono text-label-mono text-primary uppercase mb-6 flex items-center gap-2">
                 <span className="material-symbols-outlined text-[18px]">build</span>

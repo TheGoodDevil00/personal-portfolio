@@ -22,7 +22,7 @@ export default function Projects() {
       {/* Projects Grid */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-element">
         {/* Project Card 1 */}
-        <article className="bg-transparent backdrop-blur-[8px] border border-primary-container/20 rounded-lg p-8 flex flex-col gap-6 hover:border-primary-container/60 hover:shadow-[0_0_24px_rgba(43,69,89,0.15)] transition-all duration-500 group relative overflow-hidden">
+        <article className="bg-transparent backdrop-blur-[8px] border border-primary-container/20 rounded-lg p-6 md:p-8 flex flex-col gap-6 hover:border-primary-container/60 hover:shadow-[0_0_24px_rgba(43,69,89,0.15)] transition-all duration-500 group relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary-container/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="relative z-10 flex flex-col h-full">
             <header className="flex justify-between items-start mb-4">
