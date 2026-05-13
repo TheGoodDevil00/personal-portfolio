@@ -6,6 +6,9 @@ import { Footer } from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Hitesh Patil',
   description: 'Aspiring ML Engineer & Backend Developer Portfolio',
+  icons: {
+    icon: '/avatar.png',
+  },
 }
 
 export default function RootLayout({
