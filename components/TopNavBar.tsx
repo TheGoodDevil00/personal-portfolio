@@ -1,10 +1,30 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { motion, AnimatePresence } from 'motion/react'
 
 export function TopNavBar() {
   const pathname = usePathname()
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  // Close menu when route changes
+  useEffect(() => {
+    setIsMenuOpen(false)
+  }, [pathname])
+
+  // Prevent scrolling when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isMenuOpen])
   
   const navItems = [
     { name: 'Home', path: '/' },
@@ -42,10 +62,71 @@ export function TopNavBar() {
             </button>
           </a>
         </div>
-        <button className="md:hidden flex items-center text-silver-mist">
-          <span className="material-symbols-outlined text-3xl">menu</span>
+        <button 
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden flex items-center text-silver-mist z-[110] relative p-2"
+          aria-label="Toggle Menu"
+        >
+          <span className="material-symbols-outlined text-3xl">
+            {isMenuOpen ? 'close' : 'menu'}
+          </span>
         </button>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: '-100%' }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: '-100%' }}
+            transition={{ type: 'spring', damping: 30, stiffness: 300 }}
+            className="fixed inset-0 z-[100] bg-background md:hidden flex flex-col items-center pt-32 gap-12 overflow-y-auto"
+          >
+            <div className="flex flex-col items-center gap-8">
+              {navItems.map((item, index) => {
+                const isActive = pathname === item.path
+                return (
+                  <motion.div
+                    key={item.path}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                  >
+                    <Link 
+                      href={item.path}
+                      className={isActive 
+                        ? "text-primary text-4xl font-display font-bold"
+                        : "text-slate-hint text-4xl font-display font-medium hover:text-silver-mist transition-colors"}
+                    >
+                      {item.name}
+                    </Link>
+                  </motion.div>
+                )
+              })}
+            </div>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+              className="mt-8"
+            >
+              <a href="/Hitesh_Patil_Resume.pdf" download="Hitesh_Patil_Resume.pdf">
+                <button className="px-10 py-4 bg-transparent border border-primary text-primary font-heading-sm text-heading-sm rounded-lg hover:border-silver-mist hover:text-silver-mist transition-colors">
+                  Download Resume
+                </button>
+              </a>
+            </motion.div>
+
+            {/* Architectural visual detail in mobile menu */}
+            <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+              <div className="w-12 h-px bg-primary-container/30"></div>
+              <span className="font-label-mono text-[10px] text-slate-hint/40 uppercase tracking-widest">Void Eclipse // System initialized</span>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   )
 }
