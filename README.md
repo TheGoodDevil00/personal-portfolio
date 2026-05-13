@@ -2,8 +2,6 @@
 
 A high-performance, aesthetically-driven personal portfolio built with a "Deep Void" architectural aesthetic. This project prioritizes visual excellence, smooth motion design, and a unified system-oriented user interface.
 
-![Portfolio Preview](/public/avatar.png)
-
 ## 🌌 Core Philosophy
 The **Void Eclipse** design system utilizes a curated, harmonious color palette of Deep Surface blacks and Silver Mist highlights. The interface is designed to feel alive and responsive, using micro-animations and a unified numbering system (`01 // Initialize`, `02 // Portfolio`, etc.) to guide the user through a cohesive digital narrative.
 
