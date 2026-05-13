@@ -1,43 +1,17 @@
 'use client'
 
-import { useState } from 'react'
+import { useForm, ValidationError } from '@formspree/react'
 import Link from 'next/link'
 import CodeIcon from "@/components/ui/code-icon"
 import GithubIcon from "@/components/ui/github-icon"
 
 export default function Contact() {
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'submitted' | 'error'>('idle')
+  const [state, handleSubmit] = useForm("xrejvgqa");
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setStatus('submitting')
-
-    const formData = new FormData(e.currentTarget)
-
-    try {
-      const response = await fetch('https://formspree.io/f/xrejvgqa', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-
-      if (response.ok) {
-        setStatus('submitted')
-        e.currentTarget.reset()
-      } else {
-        setStatus('error')
-        console.error('Submission failed:', response.statusText)
-      }
-    } catch (err) {
-      setStatus('error')
-      console.error('Submission error:', err)
-    }
-
-    // Reset status after 5 seconds to allow another message
-    setTimeout(() => setStatus('idle'), 5000)
-  }
+  // Success state handled by state.succeeded
+  const isSubmitted = state.succeeded;
+  const isSubmitting = state.submitting;
+  const hasError = !!state.errors;
 
   return (
     <main className="flex-grow pt-28 pb-section max-w-container-max mx-auto px-8 w-full flex flex-col gap-section">
@@ -57,7 +31,7 @@ export default function Contact() {
           {/* Subtle Gradient Glow inside card */}
           <div className="absolute -top-24 -right-24 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl group-hover:bg-primary-container/30 transition-all duration-700 pointer-events-none"></div>
 
-          {status === 'submitted' ? (
+          {isSubmitted ? (
             <div className="relative z-10 flex flex-col items-center justify-center py-12 text-center animate-in fade-in zoom-in duration-500">
               <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6">
                 <span className="material-symbols-outlined text-primary text-4xl">check_circle</span>
@@ -77,6 +51,7 @@ export default function Contact() {
                   placeholder="John Doe"
                   className="w-full bg-background/50 border border-outline-variant/30 rounded-DEFAULT px-4 py-3 font-body text-body text-silver-mist focus:border-primary focus:outline-none focus:bg-surface-container-low transition-all"
                 />
+                <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-400 text-xs font-label-mono mt-1" />
               </div>
               <div className="flex flex-col gap-2">
                 <label htmlFor="email" className="font-label-mono text-caption uppercase text-slate-hint">Email</label>
@@ -88,6 +63,7 @@ export default function Contact() {
                   placeholder="name@domain.com"
                   className="w-full bg-background/50 border border-outline-variant/30 rounded-DEFAULT px-4 py-3 font-body text-body text-silver-mist focus:border-primary focus:outline-none focus:bg-surface-container-low transition-all"
                 />
+                <ValidationError prefix="Email" field="email" errors={state.errors} className="text-red-400 text-xs font-label-mono mt-1" />
               </div>
               <div className="flex flex-col gap-2">
                 <label htmlFor="message" className="font-label-mono text-caption uppercase text-slate-hint">Message</label>
@@ -99,19 +75,20 @@ export default function Contact() {
                   placeholder="Compose a message..."
                   className="w-full bg-background/50 border border-outline-variant/30 rounded-DEFAULT px-4 py-3 font-body text-body text-silver-mist focus:border-primary focus:outline-none focus:bg-surface-container-low transition-all resize-none"
                 ></textarea>
+                <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-400 text-xs font-label-mono mt-1" />
               </div>
-              {status === 'error' && (
+              {hasError && !state.submitting && (
                 <p className="text-red-400 text-caption font-label-mono animate-pulse">
                   Transmission error. Please check your connection and retry or use alternative routing.
                 </p>
               )}
               <button
-                disabled={status === 'submitting'}
+                disabled={isSubmitting}
                 type="submit"
                 className="mt-4 w-full bg-surface-container-high border border-outline-variant/50 text-silver-mist font-body font-bold text-body py-4 rounded-DEFAULT hover:bg-primary-container hover:text-white hover:border-primary-container hover:shadow-[0_0_20px_rgba(43,69,89,0.4)] transition-all duration-300 flex items-center justify-center gap-2 group/btn disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <span>{status === 'submitting' ? 'Sending...' : 'Send Message'}</span>
-                {status !== 'submitting' && (
+                <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+                {!isSubmitting && (
                   <span className="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
                 )}
               </button>
