@@ -34,9 +34,14 @@ export function TopNavBar() {
   ]
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-primary-container/20">
+    <>
+      <nav className={`fixed top-0 w-full z-[110] transition-all duration-300 ${
+        isMenuOpen 
+          ? 'bg-transparent border-transparent' 
+          : 'bg-background/80 backdrop-blur-md border-b border-primary-container/20'
+      }`}>
       <div className="max-w-container-max mx-auto px-8 flex justify-between items-center h-20">
-        <Link href="/" className="font-heading-sm text-heading-sm font-bold text-silver-mist tracking-tighter">
+        <Link href="/" onClick={() => setIsMenuOpen(false)} className="font-heading-sm text-heading-sm font-bold text-silver-mist tracking-tighter relative z-[120]">
           HITESH PATIL
         </Link>
         <div className="hidden md:flex gap-8 items-center">
@@ -64,7 +69,7 @@ export function TopNavBar() {
         </div>
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden flex items-center text-silver-mist z-[110] relative p-2"
+          className="md:hidden flex items-center text-silver-mist z-[120] relative p-2"
           aria-label="Toggle Menu"
         >
           <span className="material-symbols-outlined text-3xl">
@@ -72,6 +77,7 @@ export function TopNavBar() {
           </span>
         </button>
       </div>
+    </nav>
 
       {/* Mobile Menu Overlay */}
       <AnimatePresence>
@@ -81,7 +87,7 @@ export function TopNavBar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: '-100%' }}
             transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className="fixed inset-0 z-[100] bg-background md:hidden flex flex-col items-center pt-32 gap-12 overflow-y-auto"
+            className="fixed inset-0 z-[100] bg-background md:hidden flex flex-col items-center pt-32 pb-12 gap-10 overflow-y-auto w-full"
           >
             <div className="flex flex-col items-center gap-8">
               {navItems.map((item, index) => {
@@ -95,9 +101,10 @@ export function TopNavBar() {
                   >
                     <Link 
                       href={item.path}
+                      onClick={() => setIsMenuOpen(false)}
                       className={isActive 
-                        ? "text-primary text-4xl font-display font-bold"
-                        : "text-slate-hint text-4xl font-display font-medium hover:text-silver-mist transition-colors"}
+                        ? "text-primary text-3xl sm:text-4xl font-display font-bold text-center"
+                        : "text-slate-hint text-3xl sm:text-4xl font-display font-medium hover:text-silver-mist transition-colors text-center"}
                     >
                       {item.name}
                     </Link>
@@ -113,7 +120,7 @@ export function TopNavBar() {
               className="mt-8"
             >
               <a href="/Hitesh_Patil_Resume.pdf" download="Hitesh_Patil_Resume.pdf">
-                <button className="px-10 py-4 bg-transparent border border-primary text-primary font-heading-sm text-heading-sm rounded-lg hover:border-silver-mist hover:text-silver-mist transition-colors">
+                <button className="px-8 py-3 sm:px-10 sm:py-4 bg-transparent border border-primary text-primary font-heading-sm text-heading-sm rounded-lg hover:border-silver-mist hover:text-silver-mist transition-colors">
                   Download Resume
                 </button>
               </a>
@@ -127,6 +134,6 @@ export function TopNavBar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </nav>
+    </>
   )
 }
