@@ -1,0 +1,100 @@
+:root {
+  /* ─── Colors ──────────────────────────────────── */
+  --color-void-eclipse: #0B0B0B;
+  --color-silver-mist: #E4E4E4;
+  --color-code-ghost: #D8D8D8;
+  --color-slate-hint: #6B6B6B;
+  --color-steel-accent: #3A4F63;
+  --color-midnight-slate: #2B4559;
+  --color-eclipse-gradient-base: #2B4559;
+  --color-slate-gradient-base: #1A3040;
+
+  /* ─── Gradients ───────────────────────────────── */
+  --gradient-eclipse: radial-gradient(circle closest-corner at 10% 50%, rgb(43, 69, 89), rgba(0, 0, 0, 0) 55%);
+  --gradient-slate: linear-gradient(90deg, rgb(11, 11, 11), rgb(43, 69, 89) 50%, rgb(25, 40, 55));
+  --gradient-accent-glow: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(43, 69, 89, 0.4), transparent 70%);
+
+  /* ─── Typography — Font Families ─────────────── */
+  --font-primary: 'Montserrat', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-display: 'Playfair Display', ui-serif, Georgia, "Times New Roman", serif;
+  --font-system-ui: 'system-ui', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* ─── Typography — Scale ──────────────────────── */
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 24px;
+  --leading-subheading: 1.5;
+  --tracking-subheading: -0.24px;
+  --text-heading-sm: 32px;
+  --leading-heading-sm: 1.25;
+  --tracking-heading-sm: -0.96px;
+  --text-heading: 50px;
+  --leading-heading: 0.9;
+  --tracking-heading: -1.5px;
+  --text-heading-lg: 74px;
+  --leading-heading-lg: 0.9;
+  --tracking-heading-lg: 1.48px;
+  --text-display: 88px;
+  --leading-display: 0.8;
+  --tracking-display: -6.16px;
+
+  /* ─── Typography — Weights ────────────────────── */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ─── Spacing ─────────────────────────────────── */
+  --spacing-unit: 4px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-128: 128px;
+  --spacing-136: 136px;
+  --spacing-160: 160px;
+
+  /* ─── Layout ──────────────────────────────────── */
+  --page-max-width: 1200px;
+  --section-gap: 64px;
+  --card-padding: 16px;
+  --element-gap: 16px;
+
+  /* ─── Border Radius ───────────────────────────── */
+  --radius-lg: 8px;
+  --radius-lg-2: 10.8px;
+  --radius-2xl: 19.2px;
+  --radius-full: 99px;
+  --radius-full-2: 1584px;
+  --radius-full-3: 10000px;
+  --radius-tags: 99px;
+  --radius-cards: 19.2px;
+  --radius-buttons: 8px;
+  --radius-circular: 10000px;
+  --radius-pillbuttons: 1584px;
+  --radius-smallwidgets: 10.8px;
+
+  /* ─── Shadows ─────────────────────────────────── */
+  --shadow-subtle: rgba(16, 24, 40, 0.05) 0px 1px 2px 0px;
+  --shadow-slate-glow: rgba(43, 69, 89, 0.15) 0px 8px 32px 0px;
+
+  /* ─── Surfaces ────────────────────────────────── */
+  --surface-void-canvas: #0B0B0B;
+  --surface-frosted-pane: rgba(0, 0, 0, 0);
+  --surface-gradient-field: #1A3040;
+}

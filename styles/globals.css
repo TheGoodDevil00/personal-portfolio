@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@300;400&family=Space+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* ─── Colors ──────────────────────────────────── */
+  --color-void-eclipse: #0B0B0B;
+  --color-silver-mist: #E4E4E4;
+  --color-code-ghost: #D8D8D8;
+  --color-slate-hint: #6B6B6B;
+  --color-steel-accent: #3A4F63;
+  --color-midnight-slate: #2B4559;
+  --color-eclipse-gradient-base: #2B4559;
+  --color-slate-gradient-base: #1A3040;
+
+  /* ─── Typography ──────────────────────────────── */
+  --font-primary: 'Montserrat', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-display: 'Playfair Display', ui-serif, Georgia, "Times New Roman", serif;
+
+  /* ─── Spacing ─────────────────────────────────── */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-128: 128px;
+  --spacing-136: 136px;
+  --spacing-160: 160px;
+
+  /* ─── Border Radius ───────────────────────────── */
+  --radius-lg: 8px;
+  --radius-lg-2: 10.8px;
+  --radius-2xl: 19.2px;
+  --radius-full: 99px;
+  --radius-full-2: 1584px;
+  --radius-full-3: 10000px;
+
+  /* ─── Shadows ─────────────────────────────────── */
+  --shadow-subtle: rgba(16, 24, 40, 0.05) 0px 1px 2px 0px;
+  --shadow-slate-glow: rgba(43, 69, 89, 0.15) 0px 8px 32px 0px;
+}
+
+/* ─── Global Reset & Base ────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-void-eclipse);
+  color: var(--color-silver-mist);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Focus Visible ──────────────────────────── */
+:focus-visible {
+  outline: 2px solid rgba(43, 69, 89, 0.8);
+  outline-offset: 3px;
+}
+
+/* ─── Selection ──────────────────────────────── */
+::selection {
+  background-color: rgba(43, 69, 89, 0.4);
+  color: #E4E4E4;
+}
+
+/* ─── Scrollbar ──────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2B4559;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3A5F73;
+}
+
+/* ─── Noise Overlay ──────────────────────────── */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+/* ─── Pulse Animation ────────────────────────── */
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(43,69,89,0.7); }
+  70%  { box-shadow: 0 0 0 6px rgba(43,69,89,0); }
+  100% { box-shadow: 0 0 0 0 rgba(43,69,89,0); }
+}
+.pulse-dot {
+  animation: pulse-ring 2.4s ease-out infinite;
+}
+
+/* ─── Hero Github Button ─────────────────────── */
+.hero-github-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  border: 1px solid rgba(107, 107, 107, 0.3);
+  color: #6B6B6B;
+  transition: all 0.2s ease;
+}
+
+.hero-github-btn:hover {
+  color: #E4E4E4;
+  border-color: rgba(228, 228, 228, 0.25);
+  background: rgba(228, 228, 228, 0.04);
+}

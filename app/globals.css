@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-secondary-fixed-variant: #34495c;
+  --color-silver-mist: #E4E4E4;
+  --color-background: #131313;
+  --color-primary-container: #2b4559;
+  --color-on-secondary: #1d3245;
+  --color-surface-tint: #afcae2;
+  --color-secondary-container: #364b5f;
+  --color-outline-variant: #43474c;
+  --color-on-tertiary-container: #9cb2c6;
+  --color-surface-container: #201f1f;
+  --color-tertiary-fixed-dim: #b3c9de;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-primary: #afcae2;
+  --color-on-secondary-container: #a5bbd2;
+  --color-tertiary-fixed: #cee5fa;
+  --color-secondary-fixed: #cfe5fe;
+  --color-on-primary: #183346;
+  --color-on-error: #690005;
+  --color-tertiary: #b3c9de;
+  --color-on-tertiary-fixed-variant: #34495a;
+  --color-inverse-surface: #e5e2e1;
+  --color-on-tertiary-fixed: #051e2d;
+  --color-error: #ffb4ab;
+  --color-on-primary-fixed: #001e30;
+  --color-primary-fixed: #cbe6ff;
+  --color-slate-hint: #6B6B6B;
+  --color-surface-container-low: #1c1b1b;
+  --color-inverse-primary: #476176;
+  --color-on-tertiary: #1d3343;
+  --color-surface-bright: #3a3939;
+  --color-surface: #131313;
+  --color-on-error-container: #ffdad6;
+  --color-on-surface-variant: #c3c7cd;
+  --color-on-background: #e5e2e1;
+  --color-code-ghost: #D8D8D8;
+  --color-outline: #8d9197;
+  --color-on-primary-fixed-variant: #30495e;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-dim: #131313;
+  --color-on-secondary-fixed: #051d2f;
+  --color-secondary-fixed-dim: #b3c9e1;
+  --color-surface-container-highest: #353534;
+  --color-surface-variant: #353534;
+  --color-tertiary-container: #2f4556;
+  --color-on-primary-container: #98b2ca;
+  --color-primary-fixed-dim: #afcae2;
+  --color-secondary: #b3c9e1;
+  --color-on-surface: #e5e2e1;
+  --color-inverse-on-surface: #313030;
+  --color-error-container: #93000a;
+
+  --spacing-element: 16px;
+  --spacing-section: 64px;
+  --spacing-container-max: 1200px;
+  --spacing-card: 16px;
+  --spacing-unit: 4px;
+
+  --font-heading-sm: "Montserrat", sans-serif;
+  --font-body-sm: "Montserrat", sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-label-mono: "Space Mono", monospace;
+  --font-caption: "Montserrat", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+  --font-heading: "Playfair Display", serif;
+  --font-subheading: "Montserrat", sans-serif;
+  --font-heading-lg: "Space Mono", monospace;
+
+  --text-heading-sm: 32px;
+  --text-heading-sm--line-height: 1.25;
+  --text-heading-sm--letter-spacing: -0.03em;
+  --text-heading-sm--font-weight: 700;
+
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 1.5;
+  --text-body-sm--font-weight: 400;
+
+  --text-display: 88px;
+  --text-display--line-height: 0.8;
+  --text-display--letter-spacing: -0.07em;
+  --text-display--font-weight: 300;
+
+  --text-label-mono: 14px;
+  --text-label-mono--line-height: 1.5;
+  --text-label-mono--letter-spacing: 0.2em;
+  --text-label-mono--font-weight: 400;
+
+  --text-caption: 10px;
+  --text-caption--line-height: 1.5;
+  --text-caption--font-weight: 400;
+
+  --text-body: 16px;
+  --text-body--line-height: 1.5;
+  --text-body--font-weight: 400;
+
+  --text-heading: 50px;
+  --text-heading--line-height: 0.9;
+  --text-heading--letter-spacing: -0.03em;
+  --text-heading--font-weight: 400;
+
+  --text-subheading: 24px;
+  --text-subheading--line-height: 1.5;
+  --text-subheading--letter-spacing: -0.01em;
+  --text-subheading--font-weight: 500;
+
+  --text-heading-lg: 74px;
+  --text-heading-lg--line-height: 0.9;
+  --text-heading-lg--letter-spacing: 0.02em;
+  --text-heading-lg--font-weight: 700;
+}
+
+@layer utilities {
+  .slate-glow {
+    box-shadow: 0 0 20px rgba(43, 69, 89, 0.2);
+  }
+  .glass-panel {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(43, 69, 89, 0.2);
+  }
+  .text-gradient {
+    background: linear-gradient(to right, #E4E4E4, #6B6B6B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  }
+  .glow-hover:hover {
+    box-shadow: 0 0 15px rgba(54, 75, 95, 0.4);
+  }
+}
