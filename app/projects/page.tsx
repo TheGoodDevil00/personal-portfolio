@@ -9,11 +9,11 @@ export const metadata = {
 
 export default function Projects() {
   return (
-    <main className="flex-grow pt-28 pb-section px-4 md:px-8 max-w-container-max mx-auto w-full flex flex-col gap-section">
+    <main className="w-full flex-grow pt-28 pb-section px-4 md:px-8 max-w-container-max mx-auto flex flex-col gap-section">
       {/* Hero Header */}
       <header className="flex flex-col gap-4 max-w-3xl">
         <span className="font-label-mono text-label-mono text-slate-hint uppercase tracking-[0.2em]">02 // PORTFOLIO</span>
-        <h1 className="font-display text-display text-silver-mist">Selected Works</h1>
+        <h1 className="font-display text-4xl md:text-display text-silver-mist">Selected Works</h1>
         <p className="font-body text-body text-slate-hint max-w-xl mt-4 leading-relaxed">
           A curated collection of scalable systems, high-performance web applications, and technical explorations. Built with precision and a void-first architectural approach.
         </p>

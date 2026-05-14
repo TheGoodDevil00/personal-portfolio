@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="flex-grow pt-20 pb-section">
       {/* Hero Section */}
-      <section className="max-w-container-max mx-auto px-8 md:px-16 pt-8 md:pt-16 pb-section flex flex-col lg:flex-row items-center gap-16">
+      <section className="w-full max-w-container-max mx-auto px-4 md:px-16 pt-8 md:pt-16 pb-section flex flex-col lg:flex-row items-center gap-16">
         <div className="flex-1 text-left z-10 relative">
           <div className="font-label-mono text-label-mono uppercase text-slate-hint mb-6 tracking-widest">
             01 // Initialize
@@ -41,7 +41,7 @@ export default function Home() {
       </section>
 
       {/* Core Stack Section */}
-      <section className="max-w-container-max mx-auto px-8 md:px-16 py-section">
+      <section className="w-full max-w-container-max mx-auto px-4 md:px-16 py-section">
         <div className="font-label-mono text-label-mono uppercase text-slate-hint mb-12 tracking-widest text-center">
           CORE SKILLS
         </div>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 export function Footer() {
   return (
     <footer className="bg-surface-container-lowest border-t border-primary-container/10 w-full py-section mt-auto relative z-20">
-      <div className="max-w-container-max mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-element">
+      <div className="w-full max-w-container-max mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-element">
         <div className="font-heading-sm text-heading-sm text-on-surface">
           HITESH PATIL
         </div>

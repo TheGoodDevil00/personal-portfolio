@@ -40,8 +40,8 @@ export function TopNavBar() {
           ? 'bg-transparent border-transparent' 
           : 'bg-background/80 backdrop-blur-md border-b border-primary-container/20'
       }`}>
-      <div className="max-w-container-max mx-auto px-8 flex justify-between items-center h-20">
-        <Link href="/" onClick={() => setIsMenuOpen(false)} className="font-heading-sm text-heading-sm font-bold text-silver-mist tracking-tighter relative z-[120]">
+      <div className="w-full max-w-container-max mx-auto px-4 md:px-8 flex justify-between items-center h-20">
+        <Link href="/" onClick={() => setIsMenuOpen(false)} className="font-heading-sm text-xl md:text-heading-sm font-bold text-silver-mist tracking-tighter relative z-[120]">
           HITESH PATIL
         </Link>
         <div className="hidden md:flex gap-8 items-center">

@@ -6,14 +6,14 @@ export default function Experience() {
   return (
     <>
       {/* Atmospheric Deep Void Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-primary-container/10 blur-[120px] rounded-full pointer-events-none z-0"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] max-w-[100vw] h-[600px] bg-primary-container/10 blur-[120px] rounded-full pointer-events-none z-0"></div>
 
-      <main className="relative z-10 max-w-container-max mx-auto px-4 md:px-8 pt-28 pb-section flex-grow">
+      <main className="w-full relative z-10 max-w-container-max mx-auto px-4 md:px-8 pt-28 pb-section flex-grow">
         {/* Hero Section Asymmetric Layout */}
         <header className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-section border-b border-primary-container/20 pb-6">
           <div className="max-w-2xl">
             <p className="font-label-mono text-label-mono text-primary uppercase mb-unit">03 // TRAJECTORY</p>
-            <h1 className="font-display text-display text-silver-mist">Experience</h1>
+            <h1 className="font-display text-4xl md:text-display text-silver-mist">Experience</h1>
           </div>
           <div className="mb-2">
             <a href="/Hitesh_Patil_Resume.pdf" download="Hitesh_Patil_Resume.pdf">
@@ -56,7 +56,7 @@ export default function Experience() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-[16px] text-tertiary-fixed-dim mt-1">arrow_right</span>
-                    Attend weekend technical sessions and contribute ~20 hours/week toward self-learning and project development.
+                    Attend weekend technical sessions and contribute ~25 hours/week toward self-learning and project development.
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-[16px] text-tertiary-fixed-dim mt-1">arrow_right</span>
