@@ -120,7 +120,7 @@ export function TopNavBar() {
               className="mt-8"
             >
               <a href="/Hitesh_Patil_Resume.pdf" download="Hitesh_Patil_Resume.pdf">
-                <button className="px-8 py-3 sm:px-10 sm:py-4 bg-transparent border border-primary text-primary font-heading-sm text-heading-sm rounded-lg hover:border-silver-mist hover:text-silver-mist transition-colors">
+                <button className="px-6 py-3 bg-transparent border border-primary text-primary font-heading-sm text-lg rounded-lg hover:border-silver-mist hover:text-silver-mist transition-colors">
                   Download Resume
                 </button>
               </a>

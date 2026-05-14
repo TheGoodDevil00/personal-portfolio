@@ -2,6 +2,7 @@ import Link from 'next/link'
 import RocketIcon from "@/components/ui/rocket-icon"
 import CodeIcon from "@/components/ui/code-icon"
 import GithubIcon from "@/components/ui/github-icon"
+import TaxiIcon from "@/components/ui/taxi-icon"
 
 export const metadata = {
   title: 'Projects - Hitesh Patil',
@@ -55,9 +56,9 @@ export default function Projects() {
           <div className="relative z-10 flex flex-col h-full">
             <header className="flex justify-between items-start mb-4">
               <span className="material-symbols-outlined text-primary text-[32px]">analytics</span>
-              <div className="flex gap-3">
+              <div className="flex items-center gap-3">
                 <Link href="https://github.com/TheGoodDevil00/NYC-Taxi-Dataset" target="_blank" aria-label="Dataset Repository" title="Dataset Repository" className="text-slate-hint hover:text-silver-mist transition-colors">
-                  <span className="material-symbols-outlined">dataset</span>
+                  <TaxiIcon size={20} color="currentColor" className="translate-y-[2.5px] scale-x-[1.05]" />
                 </Link>
                 <Link href="https://github.com/TheGoodDevil00/eda" target="_blank" aria-label="EDA Code" title="EDA Code" className="text-slate-hint hover:text-silver-mist transition-colors">
                   <GithubIcon size={20} color="currentColor" />

@@ -4,6 +4,8 @@ import { useForm, ValidationError } from '@formspree/react'
 import Link from 'next/link'
 import CodeIcon from "@/components/ui/code-icon"
 import GithubIcon from "@/components/ui/github-icon"
+import LinkedinIcon from "@/components/ui/linkedin-icon"
+import MailFilledIcon from "@/components/ui/mail-filled-icon"
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xrejvgqa");
@@ -104,7 +106,7 @@ export default function Contact() {
               {/* Direct Email */}
               <a href="mailto:thegooddevil00@gmail.com" className="flex items-center gap-4 group cursor-pointer border-b border-surface-variant pb-4">
                 <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center border border-outline-variant/20 group-hover:border-primary/50 group-hover:bg-primary-container/20 transition-all duration-300">
-                  <span className="material-symbols-outlined text-primary group-hover:text-silver-mist transition-colors">mail</span>
+                  <MailFilledIcon size={24} color="currentColor" className="text-primary group-hover:text-silver-mist transition-colors" />
                 </div>
                 <div className="flex flex-col">
                   <span className="font-label-mono text-caption uppercase text-slate-hint group-hover:text-primary transition-colors">Email directly</span>
@@ -114,7 +116,7 @@ export default function Contact() {
               {/* LinkedIn */}
               <Link href="https://linkedin.com/in/hitesh-patil07" target="_blank" className="flex items-center gap-4 group cursor-pointer border-b border-surface-variant pb-4">
                 <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center border border-outline-variant/20 group-hover:border-primary/50 group-hover:bg-primary-container/20 transition-all duration-300">
-                  <span className="material-symbols-outlined text-primary group-hover:text-silver-mist transition-colors">work</span>
+                  <LinkedinIcon size={24} color="var(--color-primary)" />
                 </div>
                 <div className="flex flex-col">
                   <span className="font-label-mono text-caption uppercase text-slate-hint group-hover:text-primary transition-colors">Network</span>
