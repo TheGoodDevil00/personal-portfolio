@@ -36,7 +36,7 @@ export default function Experience() {
               {/* Frosted Card: Experience 1 */}
               <div className="relative bg-surface/40 backdrop-blur-[8px] border border-primary-container/20 p-6 md:p-8 rounded-xl md:ml-12 group hover:bg-surface-container-high/50 hover:border-primary-container/40 transition-all duration-500">
                 {/* Timeline Node */}
-                <div className="absolute -left-[41px] top-8 w-4 h-4 rounded-full bg-background border-2 border-primary hidden md:block group-hover:bg-primary transition-colors duration-300"></div>
+                <div className="absolute -left-[36.5px] top-8 w-4 h-4 rounded-full bg-background border-2 border-primary hidden md:block group-hover:bg-primary transition-colors duration-300"></div>
                 <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-6">
                   <div>
                     <h3 className="font-subheading text-subheading text-silver-mist mb-1">AI/ML Cohort Member</h3>
@@ -56,11 +56,11 @@ export default function Experience() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-[16px] text-tertiary-fixed-dim mt-1">arrow_right</span>
-                    Attends weekend technical sessions; contributes ~20 hours/week toward self-learning and project development.
+                    Attend weekend technical sessions and contribute ~20 hours/week toward self-learning and project development.
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-[16px] text-tertiary-fixed-dim mt-1">arrow_right</span>
-                    Builds applied ML and backend-integrated projects to reinforce cohort learnings.
+                    Build applied ML and backend-integrated projects to reinforce cohort learnings.
                   </li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
