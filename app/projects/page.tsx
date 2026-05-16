@@ -82,6 +82,62 @@ export default function Projects() {
             </footer>
           </div>
         </article>
+
+        {/* Project Card 3 */}
+        <article className="bg-transparent backdrop-blur-[8px] border border-primary-container/20 rounded-lg p-6 md:p-8 flex flex-col gap-6 hover:border-primary-container/60 hover:shadow-[0_0_24px_rgba(43,69,89,0.15)] transition-all duration-500 group relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-container/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="relative z-10 flex flex-col h-full">
+            <header className="flex justify-between items-start mb-4">
+              <span className="material-symbols-outlined text-primary text-[32px]">sports_soccer</span>
+              <div className="flex gap-2">
+                <Link href="https://ignite-2-0.vercel.app" target="_blank" aria-label="Live Demo" className="text-primary hover:text-silver-mist transition-colors">
+                  <RocketIcon size={20} color="currentColor" />
+                </Link>
+              </div>
+            </header>
+            <div className="flex-grow">
+              <h2 className="font-subheading text-subheading text-silver-mist mb-3 group-hover:text-primary transition-colors duration-300">Ignite 2.0 – Realtime Tournament Infrastructure</h2>
+              <p className="font-body-sm text-body-sm text-slate-hint mb-6">
+                A realtime tournament management platform built around operational speed and spectator accessibility, combining live synchronization, dynamic leaderboards, and runtime-controlled event infrastructure into a cohesive mobile-first experience.
+              </p>
+            </div>
+            <footer className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-primary-container/10">
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Realtime</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Full Stack</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Operational UX</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">CMS</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Mobile-First</span>
+            </footer>
+          </div>
+        </article>
+
+        {/* Project Card 4 */}
+        <article className="bg-transparent backdrop-blur-[8px] border border-primary-container/20 rounded-lg p-6 md:p-8 flex flex-col gap-6 hover:border-primary-container/60 hover:shadow-[0_0_24px_rgba(43,69,89,0.15)] transition-all duration-500 group relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-container/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="relative z-10 flex flex-col h-full">
+            <header className="flex justify-between items-start mb-4">
+              <span className="material-symbols-outlined text-primary text-[32px]">cloud</span>
+              <div className="flex gap-2">
+                <Link href="https://askew-lovat.vercel.app/" target="_blank" aria-label="Live Demo" className="text-primary hover:text-silver-mist transition-colors">
+                  <RocketIcon size={20} color="currentColor" />
+                </Link>
+              </div>
+            </header>
+            <div className="flex-grow">
+              <h2 className="font-subheading text-subheading text-silver-mist mb-3 group-hover:text-primary transition-colors duration-300">Askew – Performance-Oriented Frontend Experience</h2>
+              <p className="font-body-sm text-body-sm text-slate-hint mb-6">
+                A performance-conscious web experience centered around interactive visual systems, replacing static-heavy assets with reusable component-driven rendering to optimize responsiveness, scalability, and interface fluidity.
+              </p>
+            </div>
+            <footer className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-primary-container/10">
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Frontend</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Performance</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">UI/UX</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">React</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Optimization</span>
+            </footer>
+          </div>
+        </article>
       </section>
     </main>
   )
