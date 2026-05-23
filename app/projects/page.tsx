@@ -63,7 +63,7 @@ export default function Projects() {
                 <Link href="https://github.com/TheGoodDevil00/eda" target="_blank" aria-label="EDA Code" title="EDA Code" className="text-slate-hint hover:text-silver-mist transition-colors">
                   <GithubIcon size={20} color="currentColor" />
                 </Link>
-                <Link href="https://nyc-taxi-dataset-production.up.railway.app/" target="_blank" aria-label="Live Demo" title="Live Demo" className="text-primary hover:text-silver-mist transition-colors">
+                <Link href="https://nyc-taxi-dataset-production-bf51.up.railway.app/" target="_blank" aria-label="Live Demo" title="Live Demo" className="text-primary hover:text-silver-mist transition-colors">
                   <RocketIcon size={20} color="currentColor" />
                 </Link>
               </div>
