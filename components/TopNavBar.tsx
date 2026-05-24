@@ -61,11 +61,11 @@ export function TopNavBar() {
           })}
         </div>
         <div className="hidden md:block">
-          <a href="/Hitesh_Patil_Resume.pdf" download="Hitesh_Patil_Resume.pdf">
+          <Link href="/resume">
             <button className="px-6 py-2 bg-transparent border border-primary text-primary font-body text-body rounded hover:border-silver-mist hover:text-silver-mist transition-colors duration-300">
               Resume
             </button>
-          </a>
+          </Link>
         </div>
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -119,11 +119,11 @@ export function TopNavBar() {
               transition={{ delay: 0.4 }}
               className="mt-8"
             >
-              <a href="/Hitesh_Patil_Resume.pdf" download="Hitesh_Patil_Resume.pdf">
+              <Link href="/resume" onClick={() => setIsMenuOpen(false)}>
                 <button className="px-6 py-3 bg-transparent border border-primary text-primary font-heading-sm text-lg rounded-lg hover:border-silver-mist hover:text-silver-mist transition-colors">
-                  Download Resume
+                  Resume
                 </button>
-              </a>
+              </Link>
             </motion.div>
 
             {/* Architectural visual detail in mobile menu */}

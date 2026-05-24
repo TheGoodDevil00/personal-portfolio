@@ -21,11 +21,11 @@ export default function Home() {
                 View Work
               </button>
             </Link>
-            <a href="/Hitesh_Patil_Resume.pdf" download="Hitesh_Patil_Resume.pdf">
+            <Link href="/resume">
               <button className="w-full sm:w-auto px-8 py-4 bg-transparent border border-outline-variant text-silver-mist font-heading-sm text-body-sm font-bold rounded hover:border-silver-mist transition-all duration-300">
-                Download Resume
+                Resume
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex-1 relative w-full h-[500px] flex justify-center items-center">

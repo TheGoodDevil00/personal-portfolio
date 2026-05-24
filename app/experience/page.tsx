@@ -12,7 +12,7 @@ export default function Experience() {
         {/* Hero Section Asymmetric Layout */}
         <header className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-section border-b border-primary-container/20 pb-6">
           <div className="max-w-2xl">
-            <p className="font-label-mono text-label-mono text-primary uppercase mb-unit">03 // TRAJECTORY</p>
+            <p className="font-label-mono text-label-mono text-slate-hint uppercase mb-4">03 // TRAJECTORY</p>
             <h1 className="font-display text-4xl md:text-display text-silver-mist">Experience</h1>
           </div>
           <div className="mb-2">
