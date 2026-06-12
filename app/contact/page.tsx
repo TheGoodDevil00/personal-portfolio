@@ -148,8 +148,7 @@ export default function Contact() {
           </div>
 
           {/* Environmental visual detail */}
-          <div className="hidden lg:block relative h-32 mt-auto border-l border-primary-container/30 pl-6">
-            <span className="absolute -left-[5px] top-0 w-2 h-2 rounded-full bg-primary/50"></span>
+          <div className="hidden lg:block h-32 mt-auto">
             <p className="font-label-mono text-caption text-slate-hint/60 leading-relaxed uppercase">
               LOC: 18.5204° N, 73.8567° E<br />
               PUNE, INDIA<br />
