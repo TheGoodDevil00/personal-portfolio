@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'motion/react'
+import { Menu, X } from 'lucide-react'
 
 export function TopNavBar() {
   const pathname = usePathname()
@@ -72,9 +73,11 @@ export function TopNavBar() {
           className="md:hidden flex items-center text-silver-mist z-[120] relative p-2"
           aria-label="Toggle Menu"
         >
-          <span className="material-symbols-outlined text-3xl">
-            {isMenuOpen ? 'close' : 'menu'}
-          </span>
+          {isMenuOpen ? (
+            <X size={30} className="stroke-[1.5]" />
+          ) : (
+            <Menu size={30} className="stroke-[1.5]" />
+          )}
         </button>
       </div>
     </nav>
