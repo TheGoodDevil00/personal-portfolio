@@ -1,7 +1,31 @@
 import type { Metadata } from 'next'
+import { Montserrat, Playfair_Display, Space_Mono } from 'next/font/google'
 import './globals.css'
 import { TopNavBar } from '@/components/TopNavBar'
 import { Footer } from '@/components/Footer'
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-montserrat',
+  display: 'swap',
+})
+
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
+
+const spaceMono = Space_Mono({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-space-mono',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Hitesh Patil',
@@ -17,13 +41,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="dark overflow-x-hidden">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,300;0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-      </head>
+    <html lang="en" className={`dark overflow-x-hidden ${montserrat.variable} ${playfairDisplay.variable} ${spaceMono.variable}`}>
       <body className="bg-background text-on-background min-h-screen flex flex-col font-body text-body antialiased selection:bg-primary-container selection:text-silver-mist overflow-x-hidden">
         <TopNavBar />
         {children}
