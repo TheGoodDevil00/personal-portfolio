@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import { Code, Cpu, LineChart, Settings } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -31,10 +33,13 @@ export default function Home() {
         <div className="flex-1 relative w-full h-[500px] flex justify-center items-center">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--color-primary-container)_0%,_transparent_100%)] opacity-20 z-0"></div>
           <div className="relative z-10 w-full h-full glass-panel rounded-xl overflow-hidden group">
-            <img
+            <Image
               alt="Hitesh Patil Avatar"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               src="/avatar.png"
+              width={500}
+              height={500}
+              priority
             />
           </div>
         </div>
@@ -47,30 +52,22 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="glass-panel p-8 rounded-lg flex flex-col items-center justify-center gap-4 hover:bg-surface-container-high transition-colors duration-300 group">
-            <span className="material-symbols-outlined text-4xl text-slate-hint group-hover:text-silver-mist transition-colors duration-300">
-              code
-            </span>
+            <Code size={40} className="text-slate-hint group-hover:text-silver-mist transition-colors duration-300 stroke-[1.5]" />
             <span className="font-heading-sm text-body font-bold text-silver-mist">Python</span>
             <span className="font-label-mono text-caption text-slate-hint">LANGUAGES</span>
           </div>
           <div className="glass-panel p-8 rounded-lg flex flex-col items-center justify-center gap-4 hover:bg-surface-container-high transition-colors duration-300 group">
-            <span className="material-symbols-outlined text-4xl text-slate-hint group-hover:text-silver-mist transition-colors duration-300">
-              api
-            </span>
+            <Cpu size={40} className="text-slate-hint group-hover:text-silver-mist transition-colors duration-300 stroke-[1.5]" />
             <span className="font-heading-sm text-body font-bold text-silver-mist text-center">FastAPI <br/> Streamlit</span>
             <span className="font-label-mono text-caption text-slate-hint">FRAMEWORKS</span>
           </div>
           <div className="glass-panel p-8 rounded-lg flex flex-col items-center justify-center gap-4 hover:bg-surface-container-high transition-colors duration-300 group">
-            <span className="material-symbols-outlined text-4xl text-slate-hint group-hover:text-silver-mist transition-colors duration-300">
-              analytics
-            </span>
+            <LineChart size={40} className="text-slate-hint group-hover:text-silver-mist transition-colors duration-300 stroke-[1.5]" />
             <span className="font-heading-sm text-body font-bold text-silver-mist text-center">Pandas <br/> Scikit-Learn</span>
             <span className="font-label-mono text-caption text-slate-hint">LIBRARIES</span>
           </div>
           <div className="glass-panel p-8 rounded-lg flex flex-col items-center justify-center gap-4 hover:bg-surface-container-high transition-colors duration-300 group">
-            <span className="material-symbols-outlined text-4xl text-slate-hint group-hover:text-silver-mist transition-colors duration-300">
-              build
-            </span>
+            <Settings size={40} className="text-slate-hint group-hover:text-silver-mist transition-colors duration-300 stroke-[1.5]" />
             <span className="font-heading-sm text-body font-bold text-silver-mist text-center">Git <br/> Docker</span>
             <span className="font-label-mono text-caption text-slate-hint">TOOLS</span>
           </div>
