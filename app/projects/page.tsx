@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Footprints, LineChart, Trophy, Cloud } from 'lucide-react'
 import RocketIcon from "@/components/ui/rocket-icon"
 import CodeIcon from "@/components/ui/code-icon"
 import GithubIcon from "@/components/ui/github-icon"
@@ -27,7 +28,7 @@ export default function Projects() {
           <div className="absolute inset-0 bg-gradient-to-br from-primary-container/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="relative z-10 flex flex-col h-full">
             <header className="flex justify-between items-start mb-4">
-              <span className="material-symbols-outlined text-primary text-[32px]">directions_walk</span>
+              <Footprints size={32} className="text-primary stroke-[1.5]" />
               <div className="flex gap-2">
                 <Link href="https://github.com/TheGoodDevil00/WalkSafe" target="_blank" aria-label="GitHub" className="text-slate-hint hover:text-silver-mist transition-colors">
                   <GithubIcon size={20} color="currentColor" />
@@ -55,7 +56,7 @@ export default function Projects() {
           <div className="absolute inset-0 bg-gradient-to-br from-primary-container/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="relative z-10 flex flex-col h-full">
             <header className="flex justify-between items-start mb-4">
-              <span className="material-symbols-outlined text-primary text-[32px]">analytics</span>
+              <LineChart size={32} className="text-primary stroke-[1.5]" />
               <div className="flex items-center gap-3">
                 <Link href="https://github.com/TheGoodDevil00/NYC-Taxi-Dataset" target="_blank" aria-label="Dataset Repository" title="Dataset Repository" className="text-slate-hint hover:text-silver-mist transition-colors">
                   <TaxiIcon size={20} color="currentColor" className="translate-y-[2.5px] scale-x-[1.05]" />
@@ -88,7 +89,7 @@ export default function Projects() {
           <div className="absolute inset-0 bg-gradient-to-br from-primary-container/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="relative z-10 flex flex-col h-full">
             <header className="flex justify-between items-start mb-4">
-              <span className="material-symbols-outlined text-primary text-[32px]">sports_soccer</span>
+              <Trophy size={32} className="text-primary stroke-[1.5]" />
               <div className="flex gap-2">
                 <Link href="https://ignite-2-0.vercel.app" target="_blank" aria-label="Live Demo" className="text-primary hover:text-silver-mist transition-colors">
                   <RocketIcon size={20} color="currentColor" />
@@ -116,7 +117,7 @@ export default function Projects() {
           <div className="absolute inset-0 bg-gradient-to-br from-primary-container/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="relative z-10 flex flex-col h-full">
             <header className="flex justify-between items-start mb-4">
-              <span className="material-symbols-outlined text-primary text-[32px]">cloud</span>
+              <Cloud size={32} className="text-primary stroke-[1.5]" />
               <div className="flex gap-2">
                 <Link href="https://askew-lovat.vercel.app/" target="_blank" aria-label="Live Demo" className="text-primary hover:text-silver-mist transition-colors">
                   <RocketIcon size={20} color="currentColor" />
