@@ -17,6 +17,9 @@ export function Footer() {
           <Link href="https://linkedin.com/in/hitesh-patil07" target="_blank" className="font-label-mono text-label-mono text-slate-hint hover:text-silver-mist hover:-translate-y-[2px] transition-all duration-300">
             LinkedIn
           </Link>
+          <Link href="https://x.com/thegooddevill" target="_blank" className="font-label-mono text-label-mono text-slate-hint hover:text-silver-mist hover:-translate-y-[2px] transition-all duration-300">
+            X
+          </Link>
         </div>
       </div>
     </footer>
