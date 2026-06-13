@@ -2,6 +2,7 @@
 
 import { useForm, ValidationError } from '@formspree/react'
 import Link from 'next/link'
+import { CheckCircle2, ArrowRight } from 'lucide-react'
 import CodeIcon from "@/components/ui/code-icon"
 import GithubIcon from "@/components/ui/github-icon"
 import LinkedinIcon from "@/components/ui/linkedin-icon"
@@ -37,7 +38,7 @@ export default function Contact() {
           {isSubmitted ? (
             <div className="relative z-10 flex flex-col items-center justify-center py-12 text-center animate-in fade-in zoom-in duration-500">
               <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6">
-                <span className="material-symbols-outlined text-primary text-4xl">check_circle</span>
+                <CheckCircle2 className="text-primary w-12 h-12 stroke-[1.5]" />
               </div>
               <h2 className="font-heading-sm text-heading-sm text-silver-mist mb-2">Transmission Received</h2>
               <p className="font-body text-body text-slate-hint">Your message has been successfully routed. I'll get back to you shortly.</p>
@@ -92,7 +93,7 @@ export default function Contact() {
               >
                 <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
                 {!isSubmitting && (
-                  <span className="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                  <ArrowRight className="w-[18px] h-[18px] group-hover/btn:translate-x-1 transition-transform stroke-[1.5]" />
                 )}
               </button>
             </form>
