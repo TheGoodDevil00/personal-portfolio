@@ -53,22 +53,22 @@ export default function Home() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="glass-panel p-8 rounded-lg flex flex-col items-center justify-center gap-4 hover:bg-surface-container-high transition-colors duration-300 group">
             <Code size={40} className="text-slate-hint group-hover:text-silver-mist transition-colors duration-300 stroke-[1.5]" />
-            <span className="font-heading-sm text-body font-bold text-silver-mist">Python</span>
+            <span className="font-heading-sm text-body font-bold text-silver-mist text-center">Python<br />C</span>
             <span className="font-label-mono text-caption text-slate-hint">LANGUAGES</span>
           </div>
           <div className="glass-panel p-8 rounded-lg flex flex-col items-center justify-center gap-4 hover:bg-surface-container-high transition-colors duration-300 group">
             <Cpu size={40} className="text-slate-hint group-hover:text-silver-mist transition-colors duration-300 stroke-[1.5]" />
-            <span className="font-heading-sm text-body font-bold text-silver-mist text-center">FastAPI <br/> Streamlit</span>
+            <span className="font-heading-sm text-body font-bold text-silver-mist text-center">FastAPI <br /> Streamlit</span>
             <span className="font-label-mono text-caption text-slate-hint">FRAMEWORKS</span>
           </div>
           <div className="glass-panel p-8 rounded-lg flex flex-col items-center justify-center gap-4 hover:bg-surface-container-high transition-colors duration-300 group">
             <LineChart size={40} className="text-slate-hint group-hover:text-silver-mist transition-colors duration-300 stroke-[1.5]" />
-            <span className="font-heading-sm text-body font-bold text-silver-mist text-center">Pandas <br/> Scikit-Learn</span>
+            <span className="font-heading-sm text-body font-bold text-silver-mist text-center">Pandas <br /> Scikit-Learn</span>
             <span className="font-label-mono text-caption text-slate-hint">LIBRARIES</span>
           </div>
           <div className="glass-panel p-8 rounded-lg flex flex-col items-center justify-center gap-4 hover:bg-surface-container-high transition-colors duration-300 group">
             <Settings size={40} className="text-slate-hint group-hover:text-silver-mist transition-colors duration-300 stroke-[1.5]" />
-            <span className="font-heading-sm text-body font-bold text-silver-mist text-center">Git <br/> Docker</span>
+            <span className="font-heading-sm text-body font-bold text-silver-mist text-center">Git <br /> Docker</span>
             <span className="font-label-mono text-caption text-slate-hint">TOOLS</span>
           </div>
         </div>
