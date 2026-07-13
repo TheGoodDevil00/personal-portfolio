@@ -58,11 +58,11 @@ export default function Experience() {
                   </li>
                   <li className="flex items-start gap-3">
                     <ChevronRight className="w-4 h-4 text-tertiary-fixed-dim mt-1 stroke-[1.5] shrink-0" />
-                    Attend weekend technical sessions and contribute ~25 hours/week toward self-learning and project development.
+                    Attend weekend technical sessions and contribute ~40 hours/week toward self-learning and project development.
                   </li>
                   <li className="flex items-start gap-3">
                     <ChevronRight className="w-4 h-4 text-tertiary-fixed-dim mt-1 stroke-[1.5] shrink-0" />
-                    Build applied ML and backend-integrated projects to reinforce cohort learnings.
+                    Built applied ML and backend-integrated projects to reinforce cohort learnings.
                   </li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
@@ -86,7 +86,7 @@ export default function Experience() {
               <div className="mb-6 border-b border-primary-container/10 pb-6 last:border-0 last:pb-0">
                 <h4 className="font-subheading text-body text-silver-mist font-bold mb-1">B.Tech in Electronics and Telecommunication</h4>
                 <p className="font-body-sm text-body-sm text-slate-hint mb-2">AISSMS Institute of Information Technology, Pune</p>
-                <p className="font-body-sm text-body-sm text-slate-hint mb-2">GPA: 8.00 / 10</p>
+                <p className="font-body-sm text-body-sm text-slate-hint mb-2">GPA: 8.05 / 10</p>
                 <p className="font-label-mono text-caption text-outline-variant">2025 - Present</p>
               </div>
             </div>
