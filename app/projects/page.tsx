@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Footprints, LineChart, Trophy, Cloud } from 'lucide-react'
+import { Footprints, LineChart, Trophy, Cloud, Radar } from 'lucide-react'
 import RocketIcon from "@/components/ui/rocket-icon"
 import CodeIcon from "@/components/ui/code-icon"
 import GithubIcon from "@/components/ui/github-icon"
@@ -38,7 +38,7 @@ export default function Projects() {
             <div className="flex-grow">
               <h2 className="font-subheading text-subheading text-silver-mist mb-3 group-hover:text-primary transition-colors duration-300">WalkSafe – Routing System</h2>
               <p className="font-body-sm text-body-sm text-slate-hint mb-6">
-                An end-to-end geospatial navigation system prioritizing pedestrian safety over shortest-path routing. Features a safety scoring model using OSM data (lighting, sidewalks, road type), live navigation, safety overlays, and SOS alerts via a Flutter mobile app.
+                An end-to-end geospatial navigation system prioritizing pedestrian safety over shortest-path routing. Features a safety scoring model using OSM features (lighting, sidewalks, road type, speed), spatial data pipeline with PostGIS and H3 indexing, self-hosted Valhalla routing engine, and a Flutter mobile app for live navigation and SOS alerts.
               </p>
             </div>
             <footer className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-primary-container/10">
@@ -46,10 +46,40 @@ export default function Projects() {
               <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">FastAPI</span>
               <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Flutter</span>
               <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">PostGIS</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">H3</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Valhalla</span>
               <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">OSMnx</span>
             </footer>
           </div>
         </article>
+        {/* Project Card: Mission Overlay (GCS) */}
+        <article className="bg-transparent backdrop-blur-[8px] border border-primary-container/20 rounded-lg p-6 md:p-8 flex flex-col gap-6 hover:border-primary-container/60 hover:shadow-[0_0_24px_rgba(43,69,89,0.15)] transition-all duration-500 group relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-container/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="relative z-10 flex flex-col h-full">
+            <header className="flex justify-between items-start mb-4">
+              <Radar size={32} className="text-primary stroke-[1.5]" />
+              <div className="flex gap-2">
+                <Link href="https://github.com/TheGoodDevil00/mission-planner-interface" target="_blank" aria-label="GitHub" className="text-slate-hint hover:text-silver-mist transition-colors">
+                  <GithubIcon size={20} color="currentColor" />
+                </Link>
+              </div>
+            </header>
+            <div className="flex-grow">
+              <h2 className="font-subheading text-subheading text-silver-mist mb-3 group-hover:text-primary transition-colors duration-300">Mission Overlay – Drone GCS</h2>
+              <p className="font-body-sm text-body-sm text-slate-hint mb-6">
+                A unified multi-vehicle Ground Control Station for autonomous drone fleet coordination, interoperable with ArduPilot SITL, Mission Planner, and QGroundControl. Implements live MAVLink telemetry ingestion over UDP with real-time GPS map tracking, flight instruments (artificial horizon, compass ribbon), per-vehicle EKF health/battery monitoring, and a one-click autonomous mission wizard for search boundary partitioning and waypoint verification.
+              </p>
+            </div>
+            <footer className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-primary-container/10">
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Node.js</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Electron</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Leaflet</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">MAVLink</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">UDP</span>
+            </footer>
+          </div>
+        </article>
+
 
         {/* Project Card 2 */}
         <article className="bg-transparent backdrop-blur-[8px] border border-primary-container/20 rounded-lg p-8 flex flex-col gap-6 hover:border-primary-container/60 hover:shadow-[0_0_24px_rgba(43,69,89,0.15)] transition-all duration-500 group relative overflow-hidden">
@@ -99,15 +129,16 @@ export default function Projects() {
             <div className="flex-grow">
               <h2 className="font-subheading text-subheading text-silver-mist mb-3 group-hover:text-primary transition-colors duration-300">Ignite 2.0 – Realtime Tournament Infrastructure</h2>
               <p className="font-body-sm text-body-sm text-slate-hint mb-6">
-                A realtime tournament management platform built around operational speed and spectator accessibility, combining live synchronization, dynamic leaderboards, and runtime-controlled event infrastructure into a cohesive mobile-first experience.
+                A realtime tournament management platform featuring dynamic leaderboards, live score synchronization, tie-breaking rules computed on-the-fly via Postgres change subscriptions, role-based auth (admin/scorer), and a Dark Stadium UI with glassmorphism and Framer Motion.
               </p>
             </div>
             <footer className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-primary-container/10">
-              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Realtime</span>
-              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Full Stack</span>
-              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Operational UX</span>
-              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">CMS</span>
-              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Mobile-First</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Next.js</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">TypeScript</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Supabase</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">PostgreSQL</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Tailwind CSS</span>
+              <span className="font-caption text-caption text-silver-mist uppercase tracking-widest bg-surface-container-high/40 border border-primary-container/30 rounded px-2 py-1">Framer Motion</span>
             </footer>
           </div>
         </article>

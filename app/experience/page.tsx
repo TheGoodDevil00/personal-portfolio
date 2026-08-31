@@ -35,7 +35,46 @@ export default function Experience() {
             <div className="absolute left-[20px] top-4 bottom-4 w-px bg-primary-container/30 hidden md:block"></div>
 
             <div className="flex flex-col gap-element">
-              {/* Frosted Card: Experience 1 */}
+              {/* Frosted Card: Experience 1 - NIDAR 2027 RescueSwarm */}
+              <div className="relative bg-surface/40 backdrop-blur-[8px] border border-primary-container/20 p-6 md:p-8 rounded-xl md:ml-12 group hover:bg-surface-container-high/50 hover:border-primary-container/40 transition-all duration-500">
+                {/* Timeline Node */}
+                <div className="absolute -left-[36.5px] top-8 w-4 h-4 rounded-full bg-background border-2 border-primary hidden md:block group-hover:bg-primary transition-colors duration-300"></div>
+                <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-6">
+                  <div>
+                    <h3 className="font-subheading text-subheading text-silver-mist mb-1">Team Lead – NIDAR 2027 RescueSwarm</h3>
+                    <div className="flex items-center gap-2 font-body-sm text-body-sm text-primary">
+                      <Building2 className="w-4 h-4 stroke-[1.5]" />
+                      <span>Autonomous Multi-Drone Survivor Search & Aid Delivery Challenge • Pune, India</span>
+                    </div>
+                  </div>
+                  <div className="bg-surface-container border border-primary-container/30 px-3 py-1 rounded font-label-mono text-caption text-slate-hint uppercase">
+                    Current
+                  </div>
+                </div>
+                <ul className="list-none space-y-3 font-body text-body text-on-surface-variant mb-6">
+                  <li className="flex items-start gap-3">
+                    <ChevronRight className="w-4 h-4 text-tertiary-fixed-dim mt-1 stroke-[1.5] shrink-0" />
+                    Leading a 10-member team building a collaborative autonomous multi-drone system for the NIDAR 2027 Track 1 Drone Innovation challenge, tasked with search, survivor geotagging, and aid delivery.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <ChevronRight className="w-4 h-4 text-tertiary-fixed-dim mt-1 stroke-[1.5] shrink-0" />
+                    Own the computer vision pipeline for real-time human/survivor detection using YOLO11n, deployed on an edge Raspberry Pi 5 for onboard, network-independent inference.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <ChevronRight className="w-4 h-4 text-tertiary-fixed-dim mt-1 stroke-[1.5] shrink-0" />
+                    Architecting the mission-critical Ground Control Station interface for unified multi-drone telemetry, mission planning, and live survivor/delivery status reporting to a single operator.
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <span className="font-label-mono text-caption text-on-secondary-container bg-surface-container border border-outline-variant px-2 py-1 rounded">YOLO11N</span>
+                  <span className="font-label-mono text-caption text-on-secondary-container bg-surface-container border border-outline-variant px-2 py-1 rounded">RASPBERRY PI 5</span>
+                  <span className="font-label-mono text-caption text-on-secondary-container bg-surface-container border border-outline-variant px-2 py-1 rounded">EDGE AI</span>
+                  <span className="font-label-mono text-caption text-on-secondary-container bg-surface-container border border-outline-variant px-2 py-1 rounded">MAVLINK</span>
+                  <span className="font-label-mono text-caption text-on-secondary-container bg-surface-container border border-outline-variant px-2 py-1 rounded">GCS</span>
+                  <span className="font-label-mono text-caption text-on-secondary-container bg-surface-container border border-outline-variant px-2 py-1 rounded">AUTONOMOUS SYSTEMS</span>
+                </div>
+              </div>
+              {/* Frosted Card: Experience 2 - Catalyst Tech Club */}
               <div className="relative bg-surface/40 backdrop-blur-[8px] border border-primary-container/20 p-6 md:p-8 rounded-xl md:ml-12 group hover:bg-surface-container-high/50 hover:border-primary-container/40 transition-all duration-500">
                 {/* Timeline Node */}
                 <div className="absolute -left-[36.5px] top-8 w-4 h-4 rounded-full bg-background border-2 border-primary hidden md:block group-hover:bg-primary transition-colors duration-300"></div>
@@ -54,15 +93,15 @@ export default function Experience() {
                 <ul className="list-none space-y-3 font-body text-body text-on-surface-variant mb-6">
                   <li className="flex items-start gap-3">
                     <ChevronRight className="w-4 h-4 text-tertiary-fixed-dim mt-1 stroke-[1.5] shrink-0" />
-                    Selected for the college AI/ML cohort focused on applied machine learning, EDA, and project-based learning.
+                    Selected as part of the college AI/ML cohort focused on applied machine learning, EDA, and project-based learning.
                   </li>
                   <li className="flex items-start gap-3">
                     <ChevronRight className="w-4 h-4 text-tertiary-fixed-dim mt-1 stroke-[1.5] shrink-0" />
-                    Attend weekend technical sessions and contribute ~40 hours/week toward self-learning and project development.
+                    Attended technical sessions and contribute ~40 hours/week toward self-learning and project development.
                   </li>
                   <li className="flex items-start gap-3">
                     <ChevronRight className="w-4 h-4 text-tertiary-fixed-dim mt-1 stroke-[1.5] shrink-0" />
-                    Built applied ML and backend-integrated projects to reinforce cohort learnings.
+                    Built applied ML and backend-integrated projects to reinforce concepts learned through the cohort.
                   </li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
