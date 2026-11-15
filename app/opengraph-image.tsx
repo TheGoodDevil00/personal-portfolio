@@ -98,7 +98,7 @@ export default async function Image() {
               gap: 16,
             }}
           >
-            {['Python', 'PyTorch', 'YOLO11', 'Next.js', 'PostGIS'].map((tag) => (
+            {['Python', 'PyTorch', 'YOLO26', 'Next.js', 'PostGIS'].map((tag) => (
               <div
                 key={tag}
                 style={{

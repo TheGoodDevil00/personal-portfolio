@@ -32,6 +32,7 @@ export function TopNavBar() {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'Projects', path: '/projects' },
+    { name: 'Achievements', path: '/achievements' },
     { name: 'Experience', path: '/experience' },
     { name: 'Contact', path: '/contact' },
   ]

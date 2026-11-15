@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     'Machine Learning Engineer',
     'Backend Developer',
     'Edge AI',
-    'YOLO11',
+    'YOLO26',
     'Geospatial Routing',
     'Valhalla',
     'PostGIS',
@@ -115,6 +115,9 @@ const jsonLd = {
       url: siteUrl,
       image: `${siteUrl}/avatar.png`,
       jobTitle: 'Machine Learning Engineer & Backend Developer',
+      award: [
+        '1st Prize Winner - MIT-WPU Incubex 2026 Innovation Challenge',
+      ],
       description:
         'Machine learning engineer and backend developer specializing in applied ML models, edge computer vision, and geospatial routing systems.',
       sameAs: [
@@ -127,7 +130,7 @@ const jsonLd = {
         'Deep Learning',
         'Computer Vision',
         'Edge AI',
-        'YOLO11',
+        'YOLO26',
         'Geospatial Routing',
         'PostGIS',
         'Valhalla',

@@ -4,6 +4,7 @@ import { Footprints, LineChart, Trophy, Cloud, Radar } from 'lucide-react'
 import RocketIcon from "@/components/ui/rocket-icon"
 import GithubIcon from "@/components/ui/github-icon"
 import TaxiIcon from "@/components/ui/taxi-icon"
+import { PrivateCodeDialog } from "@/components/PrivateCodeDialog"
 
 export const metadata: Metadata = {
   title: 'Selected Works & Projects',
@@ -70,9 +71,7 @@ export default function Projects() {
             <header className="flex justify-between items-start mb-4">
               <Radar size={32} className="text-primary stroke-[1.5]" />
               <div className="flex gap-2">
-                <Link href="https://github.com/TheGoodDevil00/mission-planner-interface" target="_blank" aria-label="GitHub" className="text-slate-hint hover:text-silver-mist transition-colors">
-                  <GithubIcon size={20} color="currentColor" />
-                </Link>
+                <PrivateCodeDialog />
               </div>
             </header>
             <div className="flex-grow">
@@ -105,9 +104,6 @@ export default function Projects() {
                 <Link href="https://github.com/TheGoodDevil00/eda" target="_blank" aria-label="EDA Code" title="EDA Code" className="text-slate-hint hover:text-silver-mist transition-colors">
                   <GithubIcon size={20} color="currentColor" />
                 </Link>
-                <Link href="https://nyc-taxi-dataset-production-bf51.up.railway.app/" target="_blank" aria-label="Live Demo" title="Live Demo" className="text-primary hover:text-silver-mist transition-colors">
-                  <RocketIcon size={20} color="currentColor" />
-                </Link>
               </div>
             </header>
             <div className="flex-grow">
@@ -131,11 +127,6 @@ export default function Projects() {
           <div className="relative z-10 flex flex-col h-full">
             <header className="flex justify-between items-start mb-4">
               <Trophy size={32} className="text-primary stroke-[1.5]" />
-              <div className="flex gap-2">
-                <Link href="https://ignite-2-0.vercel.app" target="_blank" aria-label="Live Demo" className="text-primary hover:text-silver-mist transition-colors">
-                  <RocketIcon size={20} color="currentColor" />
-                </Link>
-              </div>
             </header>
             <div className="flex-grow">
               <h2 className="font-subheading text-subheading text-silver-mist mb-3 group-hover:text-primary transition-colors duration-300">Ignite 2.0 – Realtime Tournament Infrastructure</h2>

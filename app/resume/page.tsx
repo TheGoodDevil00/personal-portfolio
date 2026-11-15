@@ -27,7 +27,7 @@ export default function ResumePage() {
         {/* Header Section */}
         <header className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-8 border-b border-primary-container/20 pb-6">
           <div className="max-w-2xl">
-            <p className="font-label-mono text-label-mono text-slate-hint uppercase mb-4">05 // DOCUMENT</p>
+            <p className="font-label-mono text-label-mono text-slate-hint uppercase mb-4">06 // DOCUMENT</p>
             <h1 className="font-display text-4xl md:text-display text-silver-mist">Curriculum Vitae</h1>
           </div>
           <div className="flex flex-wrap gap-4 mb-2 w-full md:w-auto">

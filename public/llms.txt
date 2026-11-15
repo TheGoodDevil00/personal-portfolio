@@ -6,27 +6,33 @@ Hitesh Patil (handle: TheGoodDevil00) is a software engineer focused on architec
 
 ## Core Specializations
 
-- **Applied Machine Learning & Edge AI**: Real-time object detection (YOLO11n), model optimization, feature engineering, and edge inference on hardware like Raspberry Pi 5.
+- **Applied Machine Learning & Edge AI**: Real-time object detection (YOLO26n), model optimization, feature engineering, and edge inference on hardware like Raspberry Pi 5.
 - **Geospatial Engineering & Routing**: Multi-criteria routing systems with Valhalla, PostGIS spatial queries, Uber H3 hexagonal spatial indexing, and OSMnx data ingestion.
-- **Backend Architecture & Distributed Telemetry**: Scalable microservices, REST APIs, UDP telemetry pipelines (MAVLink protocol), and real-time database subscriptions.
+- **Backend Architecture & Distributed Telemetry**: Scalable microservices, REST APIs, UDP telemetry pipelines (MAVLink protocol), MQTT sensor feeds, and real-time database subscriptions.
 - **Modern Full-Stack Development**: Next.js (App Router, Turbopack), React 19, TypeScript, Tailwind CSS, PostgreSQL, and Supabase.
+
+## Honors & Key Achievements
+
+- **1st Prize Winner – MIT-WPU Incubex 2026 Innovation Challenge**: Headed the team's computer vision pipeline, architecting a real-time deep learning model suite and evaluation software for conveyor-belt defect detection (malformed cans) alongside an industrial MQTT telemetry dashboard correlating physical sensor states with visual inferences.
+- **Team Lead – NIDAR 2027 RescueSwarm**: Leading a 10-member team building an autonomous search and aid delivery multi-drone system for Track 1 of the national challenge, deploying onboard edge computer vision (YOLO26n on Raspberry Pi 5) and a custom Ground Control Station.
 
 ## Featured Projects
 
 - [WalkSafe – Routing System](https://thegooddevil.space/projects): End-to-end geospatial navigation system prioritizing pedestrian safety over shortest-path routing. Features an OSM-derived safety scoring engine, PostGIS/H3 indexing, self-hosted Valhalla routing, and a Flutter mobile app with live SOS alerting. (Repository: https://github.com/TheGoodDevil00/WalkSafe)
-- [Mission Overlay – Drone GCS](https://thegooddevil.space/projects): Unified multi-vehicle Ground Control Station (GCS) for autonomous drone fleet coordination. Implements live MAVLink telemetry ingestion over UDP, real-time GPS tracking, artificial horizon flight instruments, and an autonomous waypoint partitioning wizard interoperable with ArduPilot and Mission Planner. (Repository: https://github.com/TheGoodDevil00/mission-planner-interface)
-- [ML & Data Analysis Systems](https://thegooddevil.space/projects): Production-ready machine learning pipelines and EDA suites spanning NYC Taxi, housing, and tabular benchmarks. Built with Scikit-learn, Pandas, FastAPI, and Streamlit. (Demo: https://nyc-taxi-dataset-production-bf51.up.railway.app/)
-- [Ignite 2.0 – Realtime Tournament Infrastructure](https://thegooddevil.space/projects): Real-time competitive tournament management platform featuring live score synchronization, on-the-fly tie-breaking via Postgres change streams, and a Dark Stadium interface built with Next.js and Supabase. (Demo: https://ignite-2-0.vercel.app)
+- [Mission Overlay – Drone GCS](https://thegooddevil.space/projects): Unified multi-vehicle Ground Control Station (GCS) for autonomous drone fleet coordination. Implements live MAVLink telemetry ingestion over UDP, real-time GPS tracking, artificial horizon flight instruments, and an autonomous waypoint partitioning wizard interoperable with ArduPilot and Mission Planner. (Source code maintained under restricted private access due to flight telemetry safety constraints).
+- [ML & Data Analysis Systems](https://thegooddevil.space/projects): Production-ready machine learning pipelines and EDA suites spanning NYC Taxi, housing, and tabular benchmarks. Built with Scikit-learn, Pandas, FastAPI, and Streamlit.
+- [Ignite 2.0 – Realtime Tournament Infrastructure](https://thegooddevil.space/projects): Real-time competitive tournament management platform featuring live score synchronization, on-the-fly tie-breaking via Postgres change streams, and a Dark Stadium interface built with Next.js and Supabase.
 - [Askew – High-Performance Frontend Experience](https://thegooddevil.space/projects): High-performance interactive UI system replacing static-heavy assets with component-driven rendering for low-latency web experiences. (Demo: https://askew-lovat.vercel.app/)
 
 ## Professional Experience & Leadership
 
-- **Team Lead – NIDAR 2027 RescueSwarm** (Current): Leading a 10-member engineering team developing an autonomous multi-drone system for the NIDAR 2027 Track 1 Drone Innovation challenge (autonomous search, survivor geotagging, and aid delivery). Leads edge computer vision pipeline (YOLO11n on Raspberry Pi 5) and the mission-critical Ground Control Station interface.
+- **Team Lead – NIDAR 2027 RescueSwarm** (Current): Leading a 10-member engineering team developing an autonomous multi-drone system for the NIDAR 2027 Track 1 Drone Innovation challenge (autonomous search, survivor geotagging, and aid delivery). Leads edge computer vision pipeline (YOLO26n on Raspberry Pi 5) and the mission-critical Ground Control Station interface.
 - **AI/ML Cohort Member – Catalyst Tech Club** (Current): Active contributor to applied ML projects, exploratory data analysis frameworks, and technical peer mentorship (~40 hrs/week dedicated to systems and AI research).
 
 ## Verified Profiles & Contact
 
 - [Portfolio Website](https://thegooddevil.space): Primary canonical showcase.
+- [Achievements Showcase](https://thegooddevil.space/achievements): Complete record of honors, hackathon awards, and competitive innovation championships.
 - [GitHub: @TheGoodDevil00](https://github.com/TheGoodDevil00): Open-source repositories and code contributions.
 - [LinkedIn: hitesh-patil07](https://linkedin.com/in/hitesh-patil07): Professional career trajectory and network.
 - [X (Twitter): @thegooddevill](https://x.com/thegooddevill): Technical updates and thoughts.
@@ -38,6 +44,7 @@ Hitesh Patil (handle: TheGoodDevil00) is a software engineer focused on architec
 
 - [Home](https://thegooddevil.space/): Overview and philosophy.
 - [Projects](https://thegooddevil.space/projects): Technical deep-dives on systems and software.
+- [Achievements](https://thegooddevil.space/achievements): Competitive innovation awards, hackathon championships, and honors.
 - [Experience](https://thegooddevil.space/experience): Career milestones, timeline, and leadership roles.
 - [Resume](https://thegooddevil.space/resume): Formatted CV viewer and PDF download.
 - [Plain Text Resume](https://thegooddevil.space/resume.txt): Plain text CV for automated agents and crawlers.

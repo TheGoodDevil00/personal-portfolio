@@ -20,7 +20,7 @@ export default function Contact() {
     <main className="flex-grow pt-28 pb-section w-full max-w-container-max mx-auto px-4 md:px-8 flex flex-col gap-section">
       {/* Header Section */}
       <header className="max-w-3xl">
-        <span className="font-label-mono text-label-mono uppercase text-slate-hint block mb-4">04 // CONTACT</span>
+        <span className="font-label-mono text-label-mono uppercase text-slate-hint block mb-4">05 // CONTACT</span>
         <h1 className="font-heading-lg text-4xl md:text-heading-lg text-silver-mist">Let&apos;s Build Something!</h1>
         <p className="font-body text-body text-on-surface-variant mt-6 max-w-xl">
           Ready to architect your next digital experience? Initialize a connection via the form below or through direct secure channels.

@@ -26,7 +26,7 @@ export default function Experience() {
         {/* Hero Section Asymmetric Layout */}
         <header className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-section">
           <div className="max-w-2xl">
-            <p className="font-label-mono text-label-mono text-slate-hint uppercase mb-4">03 // TRAJECTORY</p>
+            <p className="font-label-mono text-label-mono text-slate-hint uppercase mb-4">04 // TRAJECTORY</p>
             <h1 className="font-display text-4xl md:text-display text-silver-mist">Experience</h1>
           </div>
           <div className="mb-2">
@@ -70,7 +70,7 @@ export default function Experience() {
                   </li>
                   <li className="flex items-start gap-3">
                     <ChevronRight className="w-4 h-4 text-tertiary-fixed-dim mt-1 stroke-[1.5] shrink-0" />
-                    Own the computer vision pipeline for real-time human/survivor detection using YOLO11n, deployed on an edge Raspberry Pi 5 for onboard, network-independent inference.
+                    Own the computer vision pipeline for real-time human/survivor detection using YOLO26n, deployed on an edge Raspberry Pi 5 for onboard, network-independent inference.
                   </li>
                   <li className="flex items-start gap-3">
                     <ChevronRight className="w-4 h-4 text-tertiary-fixed-dim mt-1 stroke-[1.5] shrink-0" />
@@ -78,7 +78,7 @@ export default function Experience() {
                   </li>
                 </ul>
                 <div className="flex flex-wrap gap-2">
-                  <span className="font-label-mono text-caption text-on-secondary-container bg-surface-container border border-outline-variant px-2 py-1 rounded">YOLO11N</span>
+                  <span className="font-label-mono text-caption text-on-secondary-container bg-surface-container border border-outline-variant px-2 py-1 rounded">YOLO26N</span>
                   <span className="font-label-mono text-caption text-on-secondary-container bg-surface-container border border-outline-variant px-2 py-1 rounded">RASPBERRY PI 5</span>
                   <span className="font-label-mono text-caption text-on-secondary-container bg-surface-container border border-outline-variant px-2 py-1 rounded">EDGE AI</span>
                   <span className="font-label-mono text-caption text-on-secondary-container bg-surface-container border border-outline-variant px-2 py-1 rounded">MAVLINK</span>

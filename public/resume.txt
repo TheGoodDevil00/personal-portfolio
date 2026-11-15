@@ -26,7 +26,7 @@ TECHNICAL SKILLS
   Python, TypeScript, JavaScript, SQL, C/C++
 
 • Machine Learning & Computer Vision:
-  PyTorch, Scikit-learn, YOLO11n, Edge AI, OpenCV, Pandas, NumPy,
+  PyTorch, Scikit-learn, YOLO26n, Edge AI, OpenCV, Pandas, NumPy,
   Hyperparameter Tuning, Feature Engineering
 
 • Backend & Systems Engineering:
@@ -41,6 +41,18 @@ TECHNICAL SKILLS
   Git / GitHub workflows, Turbopack, Electron, Leaflet, Docker, Vite, Bun
 
 --------------------------------------------------------------------------------
+HONORS & AWARDS
+--------------------------------------------------------------------------------
+1st Prize Winner – INCUBEX 2026 Innovation Challenge
+MIT World Peace University (MIT-WPU), Pune, India | 2026
+• Headed the team's computer vision pipeline, developing an entire model suite
+  and custom evaluation software for real-time defect detection of malformed cans
+  on an industrial conveyor belt.
+• Engineered a low-latency monitoring dashboard ingesting high-throughput machine
+  sensor telemetry streams via MQTT, synchronizing physical machine states with
+  visual defect inference frames.
+
+--------------------------------------------------------------------------------
 EXPERIENCE & LEADERSHIP
 --------------------------------------------------------------------------------
 Team Lead – NIDAR 2027 RescueSwarm
@@ -50,7 +62,7 @@ Autonomous Multi-Drone Survivor Search & Aid Delivery Challenge | Pune, India
   collaborative autonomous multi-drone system for survivor search, geotagging,
   and emergency aid delivery.
 • Engineered and trained the real-time computer vision pipeline for human
-  detection utilizing YOLO11n, deployed onboard a Raspberry Pi 5 for
+  detection utilizing YOLO26n, deployed onboard a Raspberry Pi 5 for
   network-independent edge inference.
 • Architected the mission-critical Ground Control Station (GCS) for unified
   multi-drone telemetry ingestion, spatial mapping, and live survivor tracking.
@@ -83,19 +95,17 @@ Mission Overlay – Multi-Vehicle Drone Ground Control Station (GCS)
   map plotting, artificial horizon flight instruments, and battery/EKF health alerts.
 • Features an autonomous mission partitioning wizard for search boundaries and
   automated waypoint generation.
-• Repository: https://github.com/TheGoodDevil00/mission-planner-interface
+• Repository: Restricted Private Access (mission-critical flight telemetry protocols).
 
 ML & Exploratory Data Analysis Suite
 • End-to-end machine learning pipelines on NYC Taxi, housing, and benchmark tabular
   datasets with complete preprocessing, scaling, and hyperparameter optimization.
 • Deployed interactive prediction interface via FastAPI and Streamlit.
-• Demo: https://nyc-taxi-dataset-production-bf51.up.railway.app/
 
 Ignite 2.0 – Real-Time Tournament Infrastructure
 • Scalable tournament management engine featuring live leaderboard synchronization
   and dynamic tie-breaking rules computed via PostgreSQL change subscriptions.
 • Designed with role-based auth (admin/scorer) and a responsive Dark Stadium UI.
-• Demo: https://ignite-2-0.vercel.app
 
 Askew – Performance-Focused Web Architecture
 • High-efficiency web interface replacing heavy static assets with reusable,
