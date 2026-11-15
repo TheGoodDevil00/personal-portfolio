@@ -1,12 +1,23 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Footprints, LineChart, Trophy, Cloud, Radar } from 'lucide-react'
 import RocketIcon from "@/components/ui/rocket-icon"
-import CodeIcon from "@/components/ui/code-icon"
 import GithubIcon from "@/components/ui/github-icon"
 import TaxiIcon from "@/components/ui/taxi-icon"
 
-export const metadata = {
-  title: 'Projects - Hitesh Patil',
+export const metadata: Metadata = {
+  title: 'Selected Works & Projects',
+  description:
+    'Explore engineering projects by Hitesh Patil: WalkSafe geospatial safety routing, Mission Overlay multi-drone GCS, ML & EDA systems, Ignite 2.0 tournament infrastructure, and Askew.',
+  alternates: {
+    canonical: 'https://thegooddevil.space/projects',
+  },
+  openGraph: {
+    title: 'Selected Works & Projects | Hitesh Patil',
+    description:
+      'Explore engineering projects by Hitesh Patil: WalkSafe geospatial safety routing, Mission Overlay multi-drone GCS, ML & EDA systems, Ignite 2.0 tournament infrastructure, and Askew.',
+    url: 'https://thegooddevil.space/projects',
+  },
 }
 
 export default function Projects() {

@@ -1,0 +1,42 @@
+# Hitesh Patil
+
+> Machine Learning Engineer and Backend Developer specializing in applied machine learning models, edge computer vision, distributed systems, and geospatial routing architectures.
+
+Hitesh Patil (handle: TheGoodDevil00) is a software engineer focused on architecting intelligent, safety-aware applications and high-throughput backend services. With a background spanning autonomous multi-drone systems, computer vision on edge devices, and geospatial navigation pipelines, he builds performant solutions from data modeling to production deployment.
+
+## Core Specializations
+
+- **Applied Machine Learning & Edge AI**: Real-time object detection (YOLO11n), model optimization, feature engineering, and edge inference on hardware like Raspberry Pi 5.
+- **Geospatial Engineering & Routing**: Multi-criteria routing systems with Valhalla, PostGIS spatial queries, Uber H3 hexagonal spatial indexing, and OSMnx data ingestion.
+- **Backend Architecture & Distributed Telemetry**: Scalable microservices, REST APIs, UDP telemetry pipelines (MAVLink protocol), and real-time database subscriptions.
+- **Modern Full-Stack Development**: Next.js (App Router, Turbopack), React 19, TypeScript, Tailwind CSS, PostgreSQL, and Supabase.
+
+## Featured Projects
+
+- [WalkSafe – Routing System](https://thegooddevil.space/projects): End-to-end geospatial navigation system prioritizing pedestrian safety over shortest-path routing. Features an OSM-derived safety scoring engine, PostGIS/H3 indexing, self-hosted Valhalla routing, and a Flutter mobile app with live SOS alerting. (Repository: https://github.com/TheGoodDevil00/WalkSafe)
+- [Mission Overlay – Drone GCS](https://thegooddevil.space/projects): Unified multi-vehicle Ground Control Station (GCS) for autonomous drone fleet coordination. Implements live MAVLink telemetry ingestion over UDP, real-time GPS tracking, artificial horizon flight instruments, and an autonomous waypoint partitioning wizard interoperable with ArduPilot and Mission Planner. (Repository: https://github.com/TheGoodDevil00/mission-planner-interface)
+- [ML & Data Analysis Systems](https://thegooddevil.space/projects): Production-ready machine learning pipelines and EDA suites spanning NYC Taxi, housing, and tabular benchmarks. Built with Scikit-learn, Pandas, FastAPI, and Streamlit. (Demo: https://nyc-taxi-dataset-production-bf51.up.railway.app/)
+- [Ignite 2.0 – Realtime Tournament Infrastructure](https://thegooddevil.space/projects): Real-time competitive tournament management platform featuring live score synchronization, on-the-fly tie-breaking via Postgres change streams, and a Dark Stadium interface built with Next.js and Supabase. (Demo: https://ignite-2-0.vercel.app)
+- [Askew – High-Performance Frontend Experience](https://thegooddevil.space/projects): High-performance interactive UI system replacing static-heavy assets with component-driven rendering for low-latency web experiences. (Demo: https://askew-lovat.vercel.app/)
+
+## Professional Experience & Leadership
+
+- **Team Lead – NIDAR 2027 RescueSwarm** (Current): Leading a 10-member engineering team developing an autonomous multi-drone system for the NIDAR 2027 Track 1 Drone Innovation challenge (autonomous search, survivor geotagging, and aid delivery). Leads edge computer vision pipeline (YOLO11n on Raspberry Pi 5) and the mission-critical Ground Control Station interface.
+- **AI/ML Cohort Member – Catalyst Tech Club** (Current): Active contributor to applied ML projects, exploratory data analysis frameworks, and technical peer mentorship (~40 hrs/week dedicated to systems and AI research).
+
+## Verified Profiles & Contact
+
+- [Portfolio Website](https://thegooddevil.space): Primary canonical showcase.
+- [GitHub: @TheGoodDevil00](https://github.com/TheGoodDevil00): Open-source repositories and code contributions.
+- [LinkedIn: hitesh-patil07](https://linkedin.com/in/hitesh-patil07): Professional career trajectory and network.
+- [X (Twitter): @thegooddevill](https://x.com/thegooddevill): Technical updates and thoughts.
+- [Contact Form](https://thegooddevil.space/contact): Direct secure message routing via Formspree.
+- [Resume Download](https://thegooddevil.space/resume): Verified curriculum vitae in PDF format.
+
+## Site Structure
+
+- [Home](https://thegooddevil.space/): Overview and philosophy.
+- [Projects](https://thegooddevil.space/projects): Technical deep-dives on systems and software.
+- [Experience](https://thegooddevil.space/experience): Career milestones, timeline, and leadership roles.
+- [Resume](https://thegooddevil.space/resume): Formatted CV and direct document downloads.
+- [Contact](https://thegooddevil.space/contact): Transmission interface and social links.

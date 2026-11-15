@@ -12,7 +12,7 @@ export default function Home() {
             01 // Initialize
           </div>
           <h1 className="font-display text-display text-silver-mist mb-8 leading-tight">
-            Hi, I'm <br /> <span className="text-gradient">Hitesh Patil</span>.
+            Hi, I&apos;m <br /> <span className="text-gradient">Hitesh Patil</span>.
           </h1>
           <p className="font-subheading text-subheading text-slate-hint max-w-2xl mb-12">
             Passionate about building applied machine learning models and robust backend systems. Crafting intelligent, safety-aware applications and exploring the intersections of data and geospatial routing.

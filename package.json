@@ -3,30 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "generate-resume": "tsx scripts/generateResume.tsx"
+    "generate-resume": "bun scripts/generateResume.tsx"
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",
     "clsx": "^2.1.1",
-    "lucide-react": "^1.17.0",
-    "motion": "^12.38.0",
-    "next": "16.2.6",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "tailwind-merge": "^3.6.0"
+    "lucide-react": "^1.73.0",
+    "motion": "^14.14.0",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tailwind-merge": "^3.7.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "eslint": "^9",
-    "eslint-config-next": "16.2.6",
-    "tailwindcss": "^4",
+    "eslint-config-next": "16.4.6",
+    "tailwindcss": "^4.3.5",
     "typescript": "^5"
   }
 }

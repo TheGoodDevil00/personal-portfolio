@@ -3,7 +3,6 @@
 import { useForm, ValidationError } from '@formspree/react'
 import Link from 'next/link'
 import { CheckCircle2, ArrowRight } from 'lucide-react'
-import CodeIcon from "@/components/ui/code-icon"
 import GithubIcon from "@/components/ui/github-icon"
 import LinkedinIcon from "@/components/ui/linkedin-icon"
 import MailFilledIcon from "@/components/ui/mail-filled-icon"
@@ -22,7 +21,7 @@ export default function Contact() {
       {/* Header Section */}
       <header className="max-w-3xl">
         <span className="font-label-mono text-label-mono uppercase text-slate-hint block mb-4">04 // CONTACT</span>
-        <h1 className="font-heading-lg text-4xl md:text-heading-lg text-silver-mist">Let's Build Something!</h1>
+        <h1 className="font-heading-lg text-4xl md:text-heading-lg text-silver-mist">Let&apos;s Build Something!</h1>
         <p className="font-body text-body text-on-surface-variant mt-6 max-w-xl">
           Ready to architect your next digital experience? Initialize a connection via the form below or through direct secure channels.
         </p>
@@ -41,7 +40,7 @@ export default function Contact() {
                 <CheckCircle2 className="text-primary w-12 h-12 stroke-[1.5]" />
               </div>
               <h2 className="font-heading-sm text-heading-sm text-silver-mist mb-2">Transmission Received</h2>
-              <p className="font-body text-body text-slate-hint">Your message has been successfully routed. I'll get back to you shortly.</p>
+              <p className="font-body text-body text-slate-hint">Your message has been successfully routed. I&apos;ll get back to you shortly.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-6 relative z-10">

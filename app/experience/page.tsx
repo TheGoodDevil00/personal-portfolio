@@ -1,7 +1,19 @@
+import type { Metadata } from 'next'
 import { Download, Building2, ChevronRight, GraduationCap, Wrench, GitFork, Terminal } from 'lucide-react'
 
-export const metadata = {
-  title: 'Experience & Resume | Hitesh Patil',
+export const metadata: Metadata = {
+  title: 'Trajectory & Experience',
+  description:
+    'Career trajectory, leadership roles, and technical milestones of Hitesh Patil. Team Lead for NIDAR 2027 RescueSwarm and AI/ML Cohort Member at Catalyst Tech Club.',
+  alternates: {
+    canonical: 'https://thegooddevil.space/experience',
+  },
+  openGraph: {
+    title: 'Trajectory & Experience | Hitesh Patil',
+    description:
+      'Career trajectory, leadership roles, and technical milestones of Hitesh Patil. Team Lead for NIDAR 2027 RescueSwarm and AI/ML Cohort Member at Catalyst Tech Club.',
+    url: 'https://thegooddevil.space/experience',
+  },
 }
 
 export default function Experience() {

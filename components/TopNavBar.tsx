@@ -8,12 +8,14 @@ import { Menu, X } from 'lucide-react'
 
 export function TopNavBar() {
   const pathname = usePathname()
+  const [prevPathname, setPrevPathname] = useState(pathname)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   // Close menu when route changes
-  useEffect(() => {
+  if (prevPathname !== pathname) {
+    setPrevPathname(pathname)
     setIsMenuOpen(false)
-  }, [pathname])
+  }
 
   // Prevent scrolling when menu is open
   useEffect(() => {

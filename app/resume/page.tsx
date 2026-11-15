@@ -3,8 +3,18 @@ import Link from 'next/link'
 import { ArrowLeft, Download } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Resume | Hitesh Patil',
-  description: "View Hitesh Patil's resume online or download a copy.",
+  title: 'Curriculum Vitae',
+  description:
+    "View and download Hitesh Patil's verified resume. Machine learning engineering, edge computer vision, and backend systems.",
+  alternates: {
+    canonical: 'https://thegooddevil.space/resume',
+  },
+  openGraph: {
+    title: 'Curriculum Vitae | Hitesh Patil',
+    description:
+      "View and download Hitesh Patil's verified resume. Machine learning engineering, edge computer vision, and backend systems.",
+    url: 'https://thegooddevil.space/resume',
+  },
 }
 
 export default function ResumePage() {
