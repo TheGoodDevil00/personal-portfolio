@@ -115,6 +115,10 @@ const jsonLd = {
       url: siteUrl,
       image: `${siteUrl}/avatar.png`,
       jobTitle: 'Machine Learning Engineer & Backend Developer',
+      alumniOf: {
+        '@type': 'EducationalOrganization',
+        name: 'AISSMS Institute of Information Technology',
+      },
       award: [
         '1st Prize Winner - MIT-WPU Incubex 2026 Innovation Challenge',
       ],
