@@ -31,12 +31,14 @@ Hitesh Patil (handle: TheGoodDevil00) is a software engineer focused on architec
 - [LinkedIn: hitesh-patil07](https://linkedin.com/in/hitesh-patil07): Professional career trajectory and network.
 - [X (Twitter): @thegooddevill](https://x.com/thegooddevill): Technical updates and thoughts.
 - [Contact Form](https://thegooddevil.space/contact): Direct secure message routing via Formspree.
-- [Resume Download](https://thegooddevil.space/resume): Verified curriculum vitae in PDF format.
+- [Resume Download (PDF)](https://thegooddevil.space/Hitesh_Patil_Resume.pdf): Verified curriculum vitae in PDF format.
+- [Plain Text Resume (resume.txt)](https://thegooddevil.space/resume.txt): Clean, unparsed UTF-8 curriculum vitae for AI scrapers, terminal access, and ATS crawlers.
 
 ## Site Structure
 
 - [Home](https://thegooddevil.space/): Overview and philosophy.
 - [Projects](https://thegooddevil.space/projects): Technical deep-dives on systems and software.
 - [Experience](https://thegooddevil.space/experience): Career milestones, timeline, and leadership roles.
-- [Resume](https://thegooddevil.space/resume): Formatted CV and direct document downloads.
+- [Resume](https://thegooddevil.space/resume): Formatted CV viewer and PDF download.
+- [Plain Text Resume](https://thegooddevil.space/resume.txt): Plain text CV for automated agents and crawlers.
 - [Contact](https://thegooddevil.space/contact): Transmission interface and social links.

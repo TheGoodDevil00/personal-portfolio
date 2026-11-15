@@ -1,0 +1,112 @@
+================================================================================
+HITESH PATIL
+Machine Learning Engineer & Backend Developer
+================================================================================
+
+Location : Pune, India
+Website  : https://thegooddevil.space
+GitHub   : https://github.com/TheGoodDevil00
+LinkedIn : https://linkedin.com/in/hitesh-patil07
+X        : https://x.com/thegooddevill
+Contact  : https://thegooddevil.space/contact
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+Software engineer specializing in applied machine learning, edge computer
+vision, distributed telemetry systems, and geospatial routing architectures.
+Experienced in leading technical teams on autonomous robotics challenges,
+deploying real-time neural networks on edge hardware (Raspberry Pi 5), and
+architecting high-throughput backend services and Ground Control Stations.
+
+--------------------------------------------------------------------------------
+TECHNICAL SKILLS
+--------------------------------------------------------------------------------
+• Programming Languages:
+  Python, TypeScript, JavaScript, SQL, C/C++
+
+• Machine Learning & Computer Vision:
+  PyTorch, Scikit-learn, YOLO11n, Edge AI, OpenCV, Pandas, NumPy,
+  Hyperparameter Tuning, Feature Engineering
+
+• Backend & Systems Engineering:
+  FastAPI, Node.js, REST APIs, UDP Telemetry Pipelines, MAVLink Protocol,
+  PostgreSQL, Supabase, Next.js 16 (App Router), Linux / Shell Scripting
+
+• Geospatial & Autonomous Systems:
+  Valhalla Routing Engine, PostGIS Spatial Queries, Uber H3 Spatial Indexing,
+  OSMnx, OpenStreetMap (OSM) pipelines, ArduPilot SITL, Drone GCS Architectures
+
+• Developer Tools & Practices:
+  Git / GitHub workflows, Turbopack, Electron, Leaflet, Docker, Vite, Bun
+
+--------------------------------------------------------------------------------
+EXPERIENCE & LEADERSHIP
+--------------------------------------------------------------------------------
+Team Lead – NIDAR 2027 RescueSwarm
+Autonomous Multi-Drone Survivor Search & Aid Delivery Challenge | Pune, India
+[Current]
+• Leading a 10-member multidisciplinary engineering team developing a
+  collaborative autonomous multi-drone system for survivor search, geotagging,
+  and emergency aid delivery.
+• Engineered and trained the real-time computer vision pipeline for human
+  detection utilizing YOLO11n, deployed onboard a Raspberry Pi 5 for
+  network-independent edge inference.
+• Architected the mission-critical Ground Control Station (GCS) for unified
+  multi-drone telemetry ingestion, spatial mapping, and live survivor tracking.
+
+AI/ML Cohort Member – Catalyst Tech Club
+Pune, India
+[Current]
+• Selected for the college AI/ML cohort focused on applied machine learning,
+  exploratory data analysis, and systems integration (~40 hours/week dedicated
+  to engineering research and project execution).
+• Built full-stack machine learning applications integrating custom models with
+  backend serving layers.
+
+--------------------------------------------------------------------------------
+SELECTED PROJECTS
+--------------------------------------------------------------------------------
+WalkSafe – Safety-Aware Geospatial Routing Engine
+• End-to-end pedestrian navigation engine prioritizing route safety over
+  shortest path distances.
+• Implemented safety-scoring heuristics leveraging OpenStreetMap metadata
+  (street lighting, sidewalk availability, road classifications).
+• Built spatial data pipeline using PostGIS and Uber H3 hexagonal indexing with
+  a self-hosted Valhalla routing engine and Flutter mobile interface with SOS alerts.
+• Repository: https://github.com/TheGoodDevil00/WalkSafe
+
+Mission Overlay – Multi-Vehicle Drone Ground Control Station (GCS)
+• High-performance multi-vehicle GCS interoperable with ArduPilot SITL,
+  Mission Planner, and QGroundControl.
+• Ingests high-frequency MAVLink telemetry packets over UDP with real-time GPS
+  map plotting, artificial horizon flight instruments, and battery/EKF health alerts.
+• Features an autonomous mission partitioning wizard for search boundaries and
+  automated waypoint generation.
+• Repository: https://github.com/TheGoodDevil00/mission-planner-interface
+
+ML & Exploratory Data Analysis Suite
+• End-to-end machine learning pipelines on NYC Taxi, housing, and benchmark tabular
+  datasets with complete preprocessing, scaling, and hyperparameter optimization.
+• Deployed interactive prediction interface via FastAPI and Streamlit.
+• Demo: https://nyc-taxi-dataset-production-bf51.up.railway.app/
+
+Ignite 2.0 – Real-Time Tournament Infrastructure
+• Scalable tournament management engine featuring live leaderboard synchronization
+  and dynamic tie-breaking rules computed via PostgreSQL change subscriptions.
+• Designed with role-based auth (admin/scorer) and a responsive Dark Stadium UI.
+• Demo: https://ignite-2-0.vercel.app
+
+Askew – Performance-Focused Web Architecture
+• High-efficiency web interface replacing heavy static assets with reusable,
+  component-driven rendering to minimize latency and optimize Core Web Vitals.
+• Demo: https://askew-lovat.vercel.app/
+
+--------------------------------------------------------------------------------
+EDUCATION
+--------------------------------------------------------------------------------
+B.Tech in Electronics and Telecommunication
+AISSMS Institute of Information Technology, Pune, India
+• GPA: 8.05 / 10.0
+• Timeline: 2025 – Present
+================================================================================

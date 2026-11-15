@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowLeft, Download } from 'lucide-react'
+import { ArrowLeft, Download, FileText } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Curriculum Vitae',
@@ -37,6 +37,12 @@ export default function ResumePage() {
                 Back Home
               </button>
             </Link>
+            <a href="/resume.txt" target="_blank" rel="noopener noreferrer" className="flex-1 md:flex-initial">
+              <button className="w-full flex items-center justify-center gap-2 border border-outline-variant text-slate-hint px-5 py-3 rounded-lg font-heading-sm text-body-sm font-bold hover:border-silver-mist hover:text-silver-mist transition-colors duration-300 cursor-pointer">
+                <FileText className="w-5 h-5 stroke-[1.5]" />
+                Raw TXT
+              </button>
+            </a>
             <a href="/Hitesh_Patil_Resume.pdf" download="Hitesh_Patil_Resume.pdf" className="flex-1 md:flex-initial">
               <button className="w-full flex items-center justify-center gap-2 bg-primary-container border border-primary text-silver-mist px-6 py-3 rounded-lg font-heading-sm text-body-sm font-bold hover:bg-secondary-container transition-colors duration-300 cursor-pointer">
                 <Download className="w-5 h-5 stroke-[1.5]" />
@@ -60,6 +66,10 @@ export default function ResumePage() {
             Trouble viewing? Open the{" "}
             <a href="/Hitesh_Patil_Resume.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-bold">
               PDF in a new tab
+            </a>{" "}
+            or view as{" "}
+            <a href="/resume.txt" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-bold">
+              plain text (resume.txt)
             </a>.
           </p>
           <p className="font-label-mono text-caption text-slate-hint/60 uppercase">
